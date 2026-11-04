@@ -1,0 +1,3579 @@
+BUG ID,Version,Navegador,Estado del Reporte,Fecha del Reporte,Descripción del Bug,Pasos para reproducir,Resultado Esperado,Resultado Obtenido,Evidencia,Severidad,Autor,Observaciones,Revisor
+0,,Chrome,Cerrado,23/11/2020,Regristro - falla en ingreso de email,1. Ingresar a la aplicación 2. Ingresar el usuario y contraseña3. Clic en iniciar,Se inicia sesión,No se ingresa a la aplicación,http://prntscr.com/vor1tx,Alta,Juan Perez,,
+1,V1,Firefox,Abierto,07-09,"Página Provinciano - 
+Falla en los textos de 
+la página","1 - visualizar la pagina 
+     provinciano","el sistema muestra por pantalla:
+titulos
+-provinciano:
+-buscador de datos sobre provincias
+ de la republica argentina
+campos:
+-region(valor por defecto ""todas"" , 
+ combo)
+-nombre(valor por defecto ""vacio"")
+opcion buscar!","El sistema muestra por pantalla:
+titulos
+- Provinciano
+- Buscador de datos sobre Provincias
+de la república argentina 
+Campos:
+- Región (valor por defecto ""todas"" , 
+ combo)
+- Nombre (vacío por defecto)
+Opción: buscar!",,Baja,,,
+2,V1,Firefox,Abierto,07-09,"Menú Combo 
+desplegable - Falla en
+el contenido y el orden","1 - visualizar menu combo
+     desplegable","se despliega el menu combo y muestra 
+las opciones en orden alfabetico:
+1 - ""Centro""
+2 - ""Ninguna""
+3 - ""Norte Grande Argentino""
+4 - ""Nuevo Cuyo""
+5 - ""La Patagonia""
+6 - ""Todas""","Se despliega el menu combo y muestra 
+las opciones:
+1 - ""Todas""
+2 - Vacío
+3 - ""Norte Grande Argentino""
+4 - ""Patagonia""
+5 - ""Centro""
+6 - ""Nuevo Cuyo""",,Alta,,,
+5,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Falla en las opciones 
+de ordenar por 
+columna","1 - Visualizar al grilla de 
+     registros","El sistema muestra una grilla que contiene 
+los registros que coincidan con el criterio
+de búsqueda seleccionado:
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3556522 hab.
+-superficie: 133007 km²
+Se encuentran disponibles opciones para
+ordenar por cualquiera de las columnas","El sistema muestra una grilla que contiene 
+los registros que coinciden con el criterio
+de búsqueda seleccionado:
+-region: Centro
+-nombre : Santa Fe
+-capital: Santa Fe
+-habitantes: 3556522 hab.
+-superficie: 133007 km²
+No se encuentran disponibles opciones para
+ordenar por columnas
+Además el sistema muestra en la grilla las
+demás provincias con sus respectivos datos",,Alta,,,
+6,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Falla en los resultados
+de búsqueda","1 - Dejar Region por defecto ""Todas""
+2 - click en campo ""nombre""
+3 - completar con  ""santa fe""
+4 - click en buscar!","El sistema muestra una grilla que contiene 
+los registros que coincidan con el criterio
+de búsqueda seleccionado:
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3556522 hab.
+-superficie: 133007 km²","El sistema muestra una grilla que contiene 
+los registros que coinciden con el criterio
+de búsqueda seleccionado:
+-region: Centro
+-nombre : Santa Fe
+-capital: Santa Fe
+-habitantes: 3556522 hab.
+-superficie: 133007 km²
+Además el sistema muestra en la grilla las
+demás provincias con sus respectivos datos",,Alta,,,
+6,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Faltan y sobran 
+algunas provincias","1 - hacer click en combo region por 
+    defecto todas
+2 - click en ""todas""
+3 - dejar campo nombre vacio
+4 - click en buscar!","el sistema muestra la grilla con la siguiente 
+informacion:
+
+-region: CENTRO
+-nombre : CORDOBA
+-capital: CORDOBA
+-habitantes: 4011371 hab.
+-superficie: 165321 km² 
+
+-region: CENTRO
+-nombre : ENTRE RIOS
+-capital: PARANA
+-habitantes: 1425578 hab.
+-superficie: 78781 km²
+
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3556522 hab.
+-superficie: 133007 km²
+
+-region: NINGUNA
+-nombre : BUENOS AIRES
+-capital: MAR DE PLATA
+-habitantes: 17523996 hab.
+-superficie: 307571 km² 
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CATAMARCA
+-capital: SAN FERNANDO DEL VALLE DE 
+             CATAMARCA
+-habitantes: 429562 hab.
+-superficie: 102602 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CORRIENTES
+-capital: CORRIENTES
+-habitantes: 1212696 hab.
+-superficie: 88199 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CHACO
+-capital: RESISTENCIA
+-habitantes: 1129606 hab.
+-superficie: 99633 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : FORMOSA
+-capital:  FORMOSA
+-habitantes: 607419 hab.
+-superficie: 72066 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : JUJUY
+-capital: SAN SALVADOR DE JUJUY
+-habitantes: 811611 hab.
+-superficie:53219 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : LA RIOJA
+-capital: LA RIOJA
+-habitantes: 383865 hab.
+-superficie: 89680 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : MISIONES
+-capital: POSADAS
+-habitantes: 1278873 hab.
+-superficie: 29801 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : TUCUMAN
+-capital: SAN MIGUEL DE TUCUMAN
+-habitantes: 1731820 hab
+-superficie: 22592 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SALTA 
+-capital: SALTA
+-habitantes: 1440672 hab.
+-superficie: 155488 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SANTIAGO DEL ESTERO
+-capital: SANTIAGO DEL ESTERO
+-habitantes: 1054028 hab.
+-superficie: 136351 km²
+
+-region: NUEVO CUYO
+-nombre : MENDOZA
+-capital: MENDOZA
+-habitantes: 2109540 hab.
+-superficie: 148827  km²
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 822853 hab.
+-superficie:89651 km²
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: GRAN SAN LUIS
+-habitantes: 542069 hab.
+-superficie: 76748 km²
+
+-region: LA PATAGONIA
+-nombre : CHUBUT
+-capital: RAWSON
+-habitantes: 592621 hab.
+-superficie: 224688   km²
+
+-region: LA PATAGONIA
+-nombre : LA PAMPA
+-capital: SANTA ROSA
+-habitantes: 359193 hab.
+-superficie: 143440 km²
+
+
+-region: LA PATAGONIA
+-nombre : NEUQUEN
+-capital: NEUQUEN
+-habitantes: 710814 hab.
+-superficie: 94078 km²
+
+-region: LA PATAGONIA
+-nombre : RIO NEGRO
+-capital: VIEDMA
+-habitantes: 762067 hab.
+-superficie: 203013 km²
+
+-region: LA PATAGONIA
+-nombre : SANTA CRUZ
+-capital: RIO GALLEGO
+-habitantes: 337226
+-superficie: 243943 km²
+
+
+-region: LA PATAGONIA
+-nombre : TIERRA DEL FUEGO ANTARTIDA E 
+                ISLAS DEL ATALNTICO SUR
+-capital: USHUAIA
+-habitantes: 195000 hab.
+-superficie: 21 571 (excluyendo todo el territorio 
+                  reclamado)
+                  37967 km² (excluyendo a la 
+                  antartida argentina)
+                  1 003 281 (incluyendo todo el 
+                  territorio reclamado) km²","La grilla muestra los datos de todas las 
+provincias menos de las de Corrientes y
+Jujuy, también muestra los datos de la 
+Ciudad Autónoma de Buenos Aires que 
+no es una provincia.
+Los datos de algunas provincias son
+incorrectos.",,Alta,,,
+8,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por la región 
+Centro
+","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""centro"" (Hacer click en la 
+opción ""centro"")
+3- Dejan en blanco campo nombre
+4 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: CENTRO
+-nombre : CORDOBA
+-capital: CORDOBA
+-habitantes: 4011371 hab.
+-superficie: 165321 km² 
+
+-region: CENTRO
+-nombre : ENTRE RIOS
+-capital: PARANA
+-habitantes: 1425578 hab.
+-superficie: 78781 km²
+
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3556522 hab.
+-superficie: 133007 km²","El sistema muestra una grilla con los datos de 
+todas las provincias, incluyendo las que no 
+pertenecen a la región centro",,Alta,,,
+9,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por la región 
+Norte Grande Argentino
+","1 - hacer click en combo region
+   ( se depliega un menu) 
+2 - click en ""norte grande argentino""
+3 - dejar en blanco campo nombre
+4 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CATAMARCA
+-capital: SAN FERNANDO DEL VALLE DE 
+             CATAMARCA
+-habitantes: 429562 hab.
+-superficie: 102602 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CORRIENTES
+-capital: CORRIENTES
+-habitantes: 1212696 hab.
+-superficie: 88199 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CHACO
+-capital: RESISTENCIA
+-habitantes: 1129606 hab.
+-superficie: 99633 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : FORMOSA
+-capital:  FORMOSA
+-habitantes: 607419 hab.
+-superficie: 72066 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : JUJUY
+-capital: SAN SALVADOR DE JUJUY
+-habitantes: 811611 hab.
+-superficie:53219 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : LA RIOJA
+-capital: LA RIOJA
+-habitantes: 383865 hab.
+-superficie: 89680 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : MISIONES
+-capital: POSADAS
+-habitantes: 1278873 hab.
+-superficie: 29801 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : TUCUMAN
+-capital: SAN MIGUEL DE TUCUMAN
+-habitantes: 1731820 hab
+-superficie: 22592 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SALTA 
+-capital: SALTA
+-habitantes: 1440672 hab.
+-superficie: 155488 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SANTIAGO DEL ESTERO
+-capital: SANTIAGO DEL ESTERO
+-habitantes: 1054028 hab.
+-superficie: 136351 km²
+
+","El sistema muestra una grilla con los datos de 
+todas las provincias, incluyendo las que no 
+pertenecen a la región centro",,Alta,,,
+10,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por la región 
+Nuevo Cuyo
+","1 - hacer click en combo region
+   (se depliega un menu )
+2 - click en ""nuevo cuyo""
+3 - dejar en blanco campo nombre
+4 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+-region: NUEVO CUYO
+-nombre : MENDOZA
+-capital: MENDOZA
+-habitantes: 2109540 hab.
+-superficie: 148827  km²
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 822853 hab.
+-superficie:89651 km²
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: GRAN SAN LUIS
+-habitantes: 542069 hab.
+-superficie: 76748 km²
+","El sistema muestra una grilla con los datos de 
+todas las provincias, incluyendo las que no 
+pertenecen a la región Nuevo Cuyo",,Alta,,,
+11,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por la región 
+Patagonia
+","1 - hacer click en combo region
+   (se depliega un menu )
+2 - click en ""la patagonia""
+3 - dejar en blanco campo nombre
+3 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+
+-region: LA PATAGONIA
+-nombre : CHUBUT
+-capital: RAWSON
+-habitantes: 592621 hab.
+-superficie: 224688   km²
+
+-region: LA PATAGONIA
+-nombre : LA PAMPA
+-capital: SANTA ROSA
+-habitantes: 359193 hab.
+-superficie: 143440 km²
+
+-region: LA PATAGONIA
+-nombre : NEUQUEN
+-capital: NEUQUEN
+-habitantes: 710814 hab.
+-superficie: 94078 km²
+
+-region: LA PATAGONIA
+-nombre : RIO NEGRO
+-capital: VIEDMA
+-habitantes: 762067 hab.
+-superficie: 203013 km²
+
+-region: LA PATAGONIA
+-nombre : SANTA CRUZ
+-capital: RIO GALLEGO
+-habitantes: 337226
+-superficie: 243943 km²
+
+-region: LA PATAGONIA
+-nombre : TIERRA DEL FUEGO ,ANTARTIDA E 
+                ISLAS DEL ATLANTICO SUR
+-capital: USHUAIA
+-habitantes: 195000 hab.
+-superficie: 21 571 (excluyendo todo el territorio 
+                  reclamado)
+                  37967 km² (excluyendo a la 
+                  antartida argentina)
+                  1 003 281 (incluyendo todo el 
+                  territorio reclamado) km²","El sistema muestra una grilla con los datos de 
+todas las provincias, incluyendo las que no 
+pertenecen a la región Patagonia",,Alta,,,
+12,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Buenos Aires
+","1 - hacer click en combo region 
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con ""BUENOS AIRES""
+5 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+-region: NINGUNA
+-nombre : BUENOS AIRES
+-capital: LA PLATA
+-habitantes: 17523996 hab.
+-superficie: 307571  km² 
+","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Buenos Aires""",,Alta,,,
+13,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Catamarca
+","1 - hacer click en combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con  ""CATAMARCA""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CATAMARCA
+-capital: SAN FERNANDO DEL VALLE DE 
+             CATAMARCA
+-habitantes: 429562 hab.
+-superficie: 102602 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Catamarca""",,Alta,,,
+14,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Chaco
+","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar  con ""CHACO""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CHACO
+-capital: RESISTENCIA
+-habitantes: 1129606 hab.
+-superficie: 99633 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Chaco""",,Alta,,,
+15,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Chubut
+","1 - hacer click en combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con  ""CHUBUT""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+-region: LA PATAGONIA
+-nombre : CHUBUT
+-capital: RAWSON
+-habitantes: 592621 hab.
+-superficie: 224688   km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Chubut""",,Alta,,,
+16,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Cordoba
+","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con ""CORDOBA""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+-region: CENTRO
+-nombre : CORDOBA
+-capital: CORDOBA
+-habitantes: 4011371 hab.
+-superficie: 165321 km² ","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Cordoba""",,Alta,,,
+17,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Corrientes
+","1 - hacer click en combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar  con ""CORRIENTES""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+-region: NORTE GRANDE ARGENTINO
+-nombre : CORRIENTES
+-capital: CORRIENTES
+-habitantes: 1212696 hab.
+-superficie: 88199 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Corrientes""",,Alta,,,
+18,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Entre Rios
+","1 - hacer click en combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con ""ENTRE RIOS""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+-region: CENTRO
+-nombre : ENTRE RIOS
+-capital: PARANA
+-habitantes: 1425578 hab.
+-superficie: 78781 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Entre Rios""",,Alta,,,
+19,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Formosa
+","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con ""FORMOSA""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : FORMOSA
+-capital:  FORMOSA
+-habitantes: 607419 hab.
+-superficie: 72066 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Formosa""",,Alta,,,
+20,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Jujuy
+","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con ""JUJUY""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : JUJUY
+-capital: SAN SALVADOR DE JUJUY
+-habitantes: 811611 hab.
+-superficie:53219 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Jujuy""",,Alta,,,
+21,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+La Rioja
+","1 - hacer click en combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar  con  ""LA RIOJA""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : LA RIOJA
+-capital: LA RIOJA
+-habitantes: 383865 hab.
+-superficie: 89680 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""La Rioja""",,Alta,,,
+22,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Mendoza","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar  con ""MENDOZA""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NUEVO CUYO
+-nombre : MENDOZA
+-capital: MENDOZA
+-habitantes: 2109540 hab.
+-superficie: 148827  km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Mendoza""",,Alta,,,
+23,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Misiones","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar  con ""MISIONES""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : MISIONES
+-capital: POSADAS
+-habitantes: 1278873 hab.
+-superficie: 29801 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Misiones""",,Alta,,,
+24,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Neuquén","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con  ""NEUQUEN""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: LA PATAGONIA
+-nombre : NEUQUEN
+-capital: NEUQUEN
+-habitantes: 710814 hab.
+-superficie: 94078 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Neuquén""",,Alta,,,
+25,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Rio Negro","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con  ""RIO NEGRO""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: LA PATAGONIA
+-nombre : RIO NEGRO
+-capital: VIEDMA
+-habitantes: 762067 hab.
+-superficie: 203013 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Rio Negro""",,Alta,,,
+26,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Salta","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con  ""SALTA""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SALTA 
+-capital: SALTA
+-habitantes: 1440672 hab.
+-superficie: 155488 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Salta""",,Alta,,,
+27,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+San Juan","1 - hacer click combo     region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con  ""SAN JUAN""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 822853 hab.
+-superficie:89651 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""San Juan""",,Alta,,,
+28,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+San Luis","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar  con ""SAN LUIS""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: GRAN SAN LUIS
+-habitantes: 542069 hab.
+-superficie: 76748 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""San Luis""",,Alta,,,
+29,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Santa Cruz","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con  ""SANTA CRUZ""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: LA PATAGONIA
+-nombre : SANTA CRUZ
+-capital: RIO GALLEGO
+-habitantes: 337226
+-superficie: 243943 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Santa Cruz""",,Alta,,,
+30,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Santa Fe","1 - hacer click en combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con ""SANTA FE""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3556522 hab.
+-superficie: 133007 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Santa Fe""",,Alta,,,
+31,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+Santiago del Estero","1 - hacer click en combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar  con 
+     ""SANTIAGO DEL ESTERO""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SANTIAGO DEL ESTERO
+-capital: SANTIAGO DEL ESTERO
+-habitantes: 1054028 hab.
+-superficie: 136351 km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""Santiago del Estero""",,Alta,,,
+32,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados no se 
+filtran por el nombre
+TIERRA DEL FUEGO 
+ANTARTIDA E  ISLAS 
+DEL ATALNTICO SUR","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con 
+     ""TIERRA DEL FUEGO ANTARTIDA
+     E ISLAS DEL ATLANTICO SUR""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: LA PATAGONIA
+-nombre : TIERRA DEL FUEGO ANTARTIDA E 
+                ISLAS DEL ATALNTICO SUR
+-capital: USHUAIA
+-habitantes: 195000 hab.
+-superficie: 21 571 (excluyendo todo el territorio 
+                  reclamado)
+                  37967 km² (excluyendo a la 
+                  antartida argentina)
+                  1 003 281 (incluyendo todo el 
+                  territorio reclamado) km²","El sistema muestra una grilla con los datos de 
+todas las provincias sin filtrar los resultados 
+por el nombre ""TIERRA DEL FUEGO 
+ANTARTIDA E  ISLAS DEL ATALNTICO SUR""",,Alta,,,
+33,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+Los resultados se filtran 
+por regiíon pero no por 
+el nombre Cordoba
+","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""centro""
+3- hacer click en campo nombre
+4 - completar con ""CORDOBA""
+5 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: CENTRO
+-nombre : CORDOBA
+-capital: CORDOBA
+-habitantes: 4011371 hab.
+-superficie: 165321 km² ","El sistema muestra una grilla con los datos de 
+todas las provincias de la región Centro sin 
+filtrar los resultados por el nombre ""Cordoba""",,Alta,,,
+34,V1,Firefox,Abierto,07-09,"Grilla de Resultados - 
+El sistema muestra 
+resultados filtrados por
+la región Centro y no 
+un mensaje de error","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""centro""
+3- hacer click en campo nombre
+4 - completar con ""CHUBUT""
+5 - click en buscar!"," la grilla se visualiza el mensaje 
+“No hay provincias que coincidan con lo 
+buscado”","El sistema muestra una grilla con los datos de 
+todas las provincias de la región Centro",,Alta,,,
+35,V1,Firefox,Abierto,14-09,"Grilla de Resultados - 
+Los resultados se filtran 
+por regiíon pero no por 
+el nombre Salta","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""norte grande argentino""
+3- hacer click en campo nombre
+4 - completar con ""SALTA""
+5 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SALTA 
+-capital: SALTA
+-habitantes: 1440672 hab.
+-superficie: 155488 km²","El sistema muestra una grilla con los datos de 
+todas las provincias de la región Norte 
+Grande Argentino",,Alta,,,
+36,V1,Firefox,Abierto,14-09,"Grilla de Resultados - 
+El sistema muestra 
+resultados filtrados por
+region Norte Grande
+Argentino y no un
+mensaje de error","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""norte grande argentino""
+3- hacer click en campo nombre
+4 - completar con ""MENDOZA""
+5 - click en buscar!"," la grilla se visualiza el mensaje 
+“No hay provincias que coincidan con lo buscado”","El sistema no muestra el mensaje y muestra 
+una grilla con los datos de todas las 
+provincias de la región Norte Grande 
+Argentino",,Alta,,,
+37,V1,Firefox,Abierto,14-09,"Grilla de Resultados - 
+Los resultados se filtran 
+por regiíon pero no por 
+el nombre San Luis","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""nuevo cuyo""
+3- hacer click en campo nombre
+4 - completar con ""SAN LUIS""
+5 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: GRAN SAN LUIS
+-habitantes: 542069 hab.
+-superficie: 76748 km²","El sistema muestra una grilla con los datos 
+de todas las provincias de la región Nuevo
+Cuyo",,Alta,,,
+38,V1,Firefox,Abierto,14-09,"Grilla de Resultados - 
+El sistema muestra 
+resultados filtrados por
+region Nuevo Cuyo y 
+no un mensaje de error","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""nuevo cuyo""
+3- hacer click en campo nombre
+4 - completar con "" ENTRE RIOS""
+5 - click en buscar!"," la grilla se visualiza el mensaje 
+“No hay provincias que coincidan con lo buscado”","El sistema no muestra el mensaje y muestra 
+una grilla con los datos de todas las 
+provincias de la región Nuevo Cuyo",,Alta,,,
+39,V1,Firefox,Abierto,14-09,"Grilla de Resultados - 
+Los resultados se filtran 
+por regiíon pero no por 
+el nombre Chubut","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""la patagonia""
+3- hacer click en campo nombre
+4 - completar con ""CHUBUT""
+5 - click en buscar!","en la grilla muestra la siguiente informacion:   
+
+-region: LA PATAGONIA
+-nombre : CHUBUT
+-capital: RAWSON
+-habitantes: 592621 hab.
+-superficie: 224688   km²","El sistema muestra una grilla con los datos 
+de todas las provincias de la región 
+Patagónica",,Alta,,,
+40,V1,Firefox,Abierto,14-09,"Grilla de Resultados - 
+El sistema muestra 
+resultados filtrados por
+region Patagónica y 
+no un mensaje de error","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""la patagonia""
+3- hacer click en campo nombre
+4 - completar con ""CATAMARCA""
+5 - click en buscar!"," la grilla se visualiza el mensaje 
+“No hay provincias que coincidan con lo buscado”","El sistema no muestra el mensaje y muestra 
+una grilla con los datos de todas las 
+provincias de la región Patagónica",,Alta,,,
+41,V1,Firefox,Abierto,14-09,"Grilla de Resultados - 
+El sistema no valida 
+el campo nombre con 
+números y no muestra 
+un mensaje de error","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con 
+     ""9852""
+5 - click en buscar"," la grilla se visualiza el mensaje 
+“No hay provincias que coincidan con lo buscado”","El sistema no muestra el mensaje y muestra 
+una grilla con los datos de todas las 
+provincias",,Alta,,,
+42,V1,Firefox,Abierto,14-09,"Grilla de Resultados - 
+El sistema no valida 
+el campo nombre con 
+caractéres especiales 
+y no muestra un 
+mensaje de error","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con 
+     ""S@NTA FE""
+5 - click en buscar"," la grilla se visualiza el mensaje 
+“No hay provincias que coincidan con lo buscado”","El sistema no muestra el mensaje y muestra 
+una grilla con los datos de todas las 
+provincias",,Alta,,,
+43,V1,Firefox,Abierto,14-09,"Grilla de Resultados - 
+El sistema no filtra por 
+el nombre ""entre rios""","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con 
+     ""entre rios""
+5 - click en buscar","en la grilla muestra la siguiente informacion:  
+
+-region: CENTRO
+-nombre : ENTRE RIOS
+-capital: PARANA
+-habitantes: 1425578 hab.
+-superficie: 78781 km²","El sistema muestra una grilla con los datos 
+de todas las provincias",,Alta,,,
+45,V1,Firefox,Abierto,14-09,"Grilla de Resultados - 
+El sistema no filtra por
+el nombre ""LA ""","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con 
+     ""LA ""
+5 - click en buscar","en la grilla muestra la siguiente informacion:  
+
+-region: LA PATAGONIA
+-nombre : LA PAMPA
+-capital: SANTA ROSA
+-habitantes: 359193 hab.
+-superficie: 143440 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : LA RIOJA
+-capital: LA RIOJA
+-habitantes: 383865 hab.
+-superficie: 89680 km²
+","El sistema muestra una grilla con los datos 
+de todas las provincias",,Alta,,,
+46,V1,Firefox,Abierto,14-09,"Grilla de Resultados - 
+El sistema no filtra por
+el nombre ""SAN ""","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con 
+     ""SAN ""
+5 - click en buscar","en la grilla muestra la siguiente informacion:  
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 822853 hab.
+-superficie:89651 km²
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: GRAN SAN LUIS
+-habitantes: 542069 hab.
+-superficie: 76748 km²","El sistema muestra una grilla con los datos 
+de todas las provincias",,Alta,,,
+47,V1,Firefox,Abierto,14-09,"Grilla de Resultados - 
+El sistema no filtra por
+el nombre ""SAN""","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con 
+     ""SAN""
+5 - click en buscar","en la grilla muestra la siguiente informacion:  
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 822853 hab.
+-superficie:89651 km²
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: GRAN SAN LUIS
+-habitantes: 542069 hab.
+-superficie: 76748 km²","El sistema muestra una grilla con los datos 
+de todas las provincias",,Alta,,,
+49,V1,Firefox,Abierto,14-09,"Grilla de Resultados - 
+El sistema valida el 
+campo Nombre con
+""BAIGORRIA""","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con 
+     ""BAIGORRIA""
+5 - presionar la tecla enter"," la grilla se visualiza el mensaje 
+“No hay provincias que coincidan con lo buscado”","El sistema muestra una grilla con los datos 
+de todas las provincias",,Alta,,,
+50,V1,Firefox,Abierto,14-09,"Grilla de Resultados - 
+El sistema no muestra
+la opción de ordenar 
+por columnas","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - dejar campo nombre en blanco
+4 - click en buscar
+5 - selecciona la opcion ordenar en la 
+     columna ""region""","el sistema ordena la columna region y muestra 
+las opciones en orden descendente:
+1 - ""Nuevo Cuyo""
+2 - ""Norte Grande Argentino""
+3 - ""Ninguna""
+4 - ""La Patagonia""
+5 - ""Centro""
+","No se visualiza la opción de ordenar por 
+columnas",,Alta,,,
+81,V2,Firefox,Abierto,18-09,"Página Provinciano - 
+Falla en el texto del 
+título de la página","1 - visualizar la pagina 
+     provinciano","el sistema muestra por pantalla:
+titulos
+-provinciano:
+-buscador de datos sobre provincias
+ de la republica argentina
+campos:
+-region(valor por defecto ""todas"" , 
+ combo)
+-nombre(valor por defecto ""vacio"")
+opcion buscar!","el sistema muestra por pantalla:
+titulos
+-provinciano:
+-Buscador de datos sobre Provincias de la 
+rep?blica argentina
+campos:
+-region(valor por defecto ""todas"" , combo)
+-nombre(valor por defecto ""vacio"")
+opcion buscar!",,Baja,,,
+82,V2,Firefox,Abierto,21-09,"Página Provinciano - 
+Las opciones del menú
+combo no estan en el 
+orden correcto","1 - visualizar menu combo
+     desplegable","se despliega el menu combo y muestra 
+las opciones en orden alfabetico:
+1 - ""Centro""
+2 - ""Ninguna""
+3 - ""Norte Grande Argentino""
+4 - ""Nuevo Cuyo""
+5 - ""La Patagonia""
+6 - ""Todas""","se despliega el menu combo y muestra 
+las opciones en orden alfabetico:
+1 - ""Todas""
+2 - ""Centro""
+3 - ""Ninguna""
+4 - ""Norte Grande Argentino""
+5 - ""Nuevo Cuyo""
+6 - ""Patagónica""",,Baja,,,
+84,V2,Firefox,Abierto,21-09,"Grilla de Registros - 
+La columna ""Región""
+está mal escrita
+","1 - Visualizar al grilla de 
+     registros","El sistema muestra una grilla que contiene 
+los registros que coincidan con el criterio
+de búsqueda seleccionado:
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3556522 hab.
+-superficie: 133007 km²
+Se encuentran disponibles opciones para
+ordenar por cualquiera de las columnas","El sistema muestra una grilla que contiene 
+los registros que coincidan con el criterio
+de búsqueda seleccionado:
+-regi?n: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3.194.537 hab.
+-superficie: 133007 km²
+Cuando se realiza la búsqueda la página
+se congela y demora 14 segundos en 
+responer",,Alta,,,
+85,V2,Firefox,Abierto,21-09,"Grilla de Registros - 
+Los datos de habitantes
+son incorrectos y la 
+página se congela al 
+realizar la búsqueda
+","1 - Dejar Region por defecto ""Todas""
+2 - click en campo ""nombre""
+3 - completar con  ""santa fe""
+4 - click en buscar!","El sistema muestra una grilla que contiene 
+los registros que coincidan con el criterio
+de búsqueda seleccionado:
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3556522 hab.
+-superficie: 133007 km²","El sistema muestra una grilla que contiene 
+los registros que coincidan con el criterio
+de búsqueda seleccionado:
+-regi?n: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3.194.537 hab.
+-superficie: 133007 km²
+Cuando se realiza la búsqueda la página
+se congela y demora 14 segundos en 
+responer",,Alta,,,
+86,V2,Firefox,Abierto,21-09,"Grilla de Registros - 
+Los datos de habitantes
+y superficie son 
+incorrectos, el registro
+de ""CABA"" no 
+corresponde a una 
+provincia","1 - hacer click en combo region por 
+    defecto todas
+2 - click en ""todas""
+3 - dejar campo nombre vacio
+4 - click en buscar!","el sistema muestra la grilla con la siguiente 
+informacion:
+
+-region: CENTRO
+-nombre : CORDOBA
+-capital: CORDOBA
+-habitantes: 4011371 hab.
+-superficie: 165321 km² 
+
+-region: CENTRO
+-nombre : ENTRE RIOS
+-capital: PARANA
+-habitantes: 1425578 hab.
+-superficie: 78781 km²
+
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3556522 hab.
+-superficie: 133007 km²
+
+-region: NINGUNA
+-nombre : BUENOS AIRES
+-capital: MAR DE PLATA
+-habitantes: 17523996 hab.
+-superficie: 307571 km² 
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CATAMARCA
+-capital: SAN FERNANDO DEL VALLE DE 
+             CATAMARCA
+-habitantes: 429562 hab.
+-superficie: 102602 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CORRIENTES
+-capital: CORRIENTES
+-habitantes: 1212696 hab.
+-superficie: 88199 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CHACO
+-capital: RESISTENCIA
+-habitantes: 1129606 hab.
+-superficie: 99633 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : FORMOSA
+-capital:  FORMOSA
+-habitantes: 607419 hab.
+-superficie: 72066 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : JUJUY
+-capital: SAN SALVADOR DE JUJUY
+-habitantes: 811611 hab.
+-superficie:53219 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : LA RIOJA
+-capital: LA RIOJA
+-habitantes: 383865 hab.
+-superficie: 89680 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : MISIONES
+-capital: POSADAS
+-habitantes: 1278873 hab.
+-superficie: 29801 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : TUCUMAN
+-capital: SAN MIGUEL DE TUCUMAN
+-habitantes: 1731820 hab
+-superficie: 22592 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SALTA 
+-capital: SALTA
+-habitantes: 1440672 hab.
+-superficie: 155488 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SANTIAGO DEL ESTERO
+-capital: SANTIAGO DEL ESTERO
+-habitantes: 1054028 hab.
+-superficie: 136351 km²
+
+-region: NUEVO CUYO
+-nombre : MENDOZA
+-capital: MENDOZA
+-habitantes: 2109540 hab.
+-superficie: 148827  km²
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 822853 hab.
+-superficie:89651 km²
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: GRAN SAN LUIS
+-habitantes: 542069 hab.
+-superficie: 76748 km²
+
+-region: LA PATAGONIA
+-nombre : CHUBUT
+-capital: RAWSON
+-habitantes: 592621 hab.
+-superficie: 224688   km²
+
+-region: LA PATAGONIA
+-nombre : LA PAMPA
+-capital: SANTA ROSA
+-habitantes: 359193 hab.
+-superficie: 143440 km²
+
+
+-region: LA PATAGONIA
+-nombre : NEUQUEN
+-capital: NEUQUEN
+-habitantes: 710814 hab.
+-superficie: 94078 km²
+
+-region: LA PATAGONIA
+-nombre : RIO NEGRO
+-capital: VIEDMA
+-habitantes: 762067 hab.
+-superficie: 203013 km²
+
+-region: LA PATAGONIA
+-nombre : SANTA CRUZ
+-capital: RIO GALLEGO
+-habitantes: 337226
+-superficie: 243943 km²
+
+
+-region: LA PATAGONIA
+-nombre : TIERRA DEL FUEGO ANTARTIDA E 
+                ISLAS DEL ATALNTICO SUR
+-capital: USHUAIA
+-habitantes: 195000 hab.
+-superficie: 21 571 (excluyendo todo el territorio 
+                  reclamado)
+                  37967 km² (excluyendo a la 
+                  antartida argentina)
+                  1 003 281 (incluyendo todo el 
+                  territorio reclamado) km²","el sistema muestra la grilla con la siguiente 
+informacion:
+
+-region: NINGUNA
+-nombre : CIUDAD AUTÓNOMA DE 
+BUENOS AIRES
+-capital: C.A.B.A
+-habitantes: 2.890.151 hab.
+-superficie: 200 km² 
+
+-region: NINGUNA
+-nombre : BUENOS AIRES
+-capital: LA PLATA
+-habitantes: 15.625.084 hab.
+-superficie: 307571 km² 
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CATAMARCA
+-capital: SAN FERNANDO DEL VALLE DE 
+             CATAMARCA
+-habitantes: 367.828 hab.
+-superficie: 99.633 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CHACO
+-capital: RESISTENCIA
+-habitantes: 1.055.259 hab.
+-superficie: 102.602 km²
+
+-region: PATAǴONICA
+-nombre : CHUBUT
+-capital: RAWSON
+-habitantes: 509.108 hab.
+-superficie: 224688   km²
+
+-region: CENTRO
+-nombre : CORDOBA
+-capital: CORDOBA
+-habitantes: 3.308.876 hab.
+-superficie: 165.321 km² 
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CORRIENTES
+-capital: CORRIENTES
+-habitantes: 992.595 hab.
+-superficie: 88199 km²
+
+-region: CENTRO
+-nombre : ENTRE RIOS
+-capital: PARANA
+-habitantes: 1.235.994 hab.
+-superficie: 78.781 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : FORMOSA
+-capital:  FORMOSA
+-habitantes: 530.162 hab.
+-superficie: 72066 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : JUJUY
+-capital: SAN SALVADOR DE JUJUY
+-habitantes: 673.307 hab.
+-superficie: 53219 km²
+
+-region: PATAǴONICA
+-nombre : LA PAMPA
+-capital: SANTA ROSA
+-habitantes: 318.951 hab.
+-superficie: 143440 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : LA RIOJA
+-capital: LA RIOJA
+-habitantes: 333.642 hab.
+-superficie: 89680 km²
+
+-region: NUEVO CUYO
+-nombre : MENDOZA
+-capital: MENDOZA
+-habitantes: 1.738.929 hab.
+-superficie: 148827  km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : MISIONES
+-capital: POSADAS
+-habitantes: 1.101.593 hab.
+-superficie: 29801 km²
+
+-region: PATAǴONICA
+-nombre : NEUQUEN
+-capital: NEUQUEN
+-habitantes: 551.266 hab.
+-superficie: 94078 km²
+
+-region: PATAǴONICA
+-nombre : RIO NEGRO
+-capital: VIEDMA
+-habitantes: 638.645 hab.
+-superficie: 203013 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SALTA 
+-capital: SALTA
+-habitantes: 1.214.441 hab.
+-superficie: 155488 km²
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 681.055 hab.
+-superficie:89651 km²
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: SAN LUIS
+-habitantes: 432.310 hab.
+-superficie: 76748 km²
+
+-region: PATAǴONICA
+-nombre : SANTA CRUZ
+-capital: RIO GALLEGO
+-habitantes: 273.964 hab.
+-superficie: 243943 km²
+
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3.194.537 hab.
+-superficie: 133007 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SANTIAGO DEL ESTERO
+-capital: SANTIAGO DEL ESTERO
+-habitantes: 874.006 hab.
+-superficie: 136351 km²
+
+-region: PATAǴONICA
+-nombre : TIERRA DEL FUEGO ANTARTIDA E 
+                ISLAS DEL ATALNTICO SUR
+-capital: USHUAIA
+-habitantes: 127.205 hab.
+-superficie: 21 5714
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : TUCUMAN
+-capital: SAN MIGUEL DE TUCUMAN
+-habitantes: 1.448.188 hab
+-superficie: 22592 km²",,Alta,,,
+87,V2,Firefox,Abierto,21-09,"Grilla de Registros - 
+Los datos de las 
+provincias de región 
+""Centro"" no son 
+correctos","1 - Hacer click en combo region 
+2 - Hacer click en la opción ""Centro""
+3- Dejan en blanco campo nombre
+4 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: CENTRO
+-nombre : CORDOBA
+-capital: CORDOBA
+-habitantes: 4011371 hab.
+-superficie: 165321 km² 
+
+-region: CENTRO
+-nombre : ENTRE RIOS
+-capital: PARANA
+-habitantes: 1425578 hab.
+-superficie: 78781 km²
+
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3556522 hab.
+-superficie: 133007 km²","en la grilla se despliega la siguiente 
+informacion:
+
+-region: CENTRO
+-nombre : CORDOBA
+-capital: CORDOBA
+-habitantes: 3.308.876 hab.
+-superficie: 165321 km² 
+
+-region: CENTRO
+-nombre : ENTRE RIOS
+-capital: PARANA
+-habitantes: 1.235.994 hab.
+-superficie: 78781 km²
+
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3.194.537 hab.
+-superficie: 133007 km²",,Alta,,,
+88,V2,Firefox,Abierto,21-09,"Grilla de Registros - 
+Los datos de las 
+provincias de región 
+""Norte Grande 
+Argentino"" no son 
+correctos, falta la 
+provinica de ""La Rioja""","1 - hacer click en combo region
+   ( se depliega un menu) 
+2 - click en ""norte grande argentino""
+3 - dejar en blanco campo nombre
+4 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CATAMARCA
+-capital: SAN FERNANDO DEL VALLE DE 
+             CATAMARCA
+-habitantes: 429562 hab.
+-superficie: 102602 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CORRIENTES
+-capital: CORRIENTES
+-habitantes: 1212696 hab.
+-superficie: 88199 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CHACO
+-capital: RESISTENCIA
+-habitantes: 1129606 hab.
+-superficie: 99633 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : FORMOSA
+-capital:  FORMOSA
+-habitantes: 607419 hab.
+-superficie: 72066 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : JUJUY
+-capital: SAN SALVADOR DE JUJUY
+-habitantes: 811611 hab.
+-superficie:53219 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : LA RIOJA
+-capital: LA RIOJA
+-habitantes: 383865 hab.
+-superficie: 89680 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : MISIONES
+-capital: POSADAS
+-habitantes: 1278873 hab.
+-superficie: 29801 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : TUCUMAN
+-capital: SAN MIGUEL DE TUCUMAN
+-habitantes: 1731820 hab
+-superficie: 22592 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SALTA 
+-capital: SALTA
+-habitantes: 1440672 hab.
+-superficie: 155488 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SANTIAGO DEL ESTERO
+-capital: SANTIAGO DEL ESTERO
+-habitantes: 1054028 hab.
+-superficie: 136351 km²
+
+","en la grilla se despliega la siguiente 
+informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CATAMARCA
+-capital: SAN FERNANDO DEL VALLE DE 
+             CATAMARCA
+-habitantes: 367.828 hab.
+-superficie: 99.633 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CHACO
+-capital: RESISTENCIA
+-habitantes: 1.055.259 hab.
+-superficie: 102.602 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CORRIENTES
+-capital: CORRIENTES
+-habitantes: 992.595 hab.
+-superficie: 88199 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : FORMOSA
+-capital:  FORMOSA
+-habitantes: 530.162 hab.
+-superficie: 72066 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : JUJUY
+-capital: SAN SALVADOR DE JUJUY
+-habitantes: 673.307 hab.
+-superficie: 53219 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : LA RIOJA
+-capital: LA RIOJA
+-habitantes: 383865 hab.
+-superficie: 89680 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SALTA 
+-capital: SALTA
+-habitantes: 1.214.441 hab.
+-superficie: 155488 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SANTIAGO DEL ESTERO
+-capital: SANTIAGO DEL ESTERO
+-habitantes: 874.006 hab.
+-superficie: 136351 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : TUCUMAN
+-capital: SAN MIGUEL DE TUCUMAN
+-habitantes: 1.448.188 hab
+-superficie: 22592 km²",,Alta,,,
+89,V2,Firefox,Abierto,21-09,"Grilla de Registros - 
+Los datos de las 
+provincias de región 
+""Nuevo Cuyo"" no son 
+correctos, la 
+provinica de ""La Rioja""
+no pertenece a esta 
+región","1 - hacer click en combo region
+   (se depliega un menu )
+2 - click en ""nuevo cuyo""
+3 - dejar en blanco campo nombre
+4 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+-region: NUEVO CUYO
+-nombre : MENDOZA
+-capital: MENDOZA
+-habitantes: 2109540 hab.
+-superficie: 148827  km²
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 822853 hab.
+-superficie:89651 km²
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: GRAN SAN LUIS
+-habitantes: 542069 hab.
+-superficie: 76748 km²
+","en la grilla muestra la siguiente informacion:
+
+-region: NUEVO CUYO
+-nombre : LA RIOJA
+-capital: RIOJA
+-habitantes: 333.642 hab.
+-superficie: 89.680 km²
+
+-region: NUEVO CUYO
+-nombre : MENDOZA
+-capital: MENDOZA
+-habitantes: 1.738.929 hab.
+-superficie: 148827  km²
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 681.055 hab.
+-superficie:89651 km²
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: GRAN SAN LUIS
+-habitantes: 432.310 hab.
+-superficie: 76748 km²",,Alta,,,
+90,V2,Firefox,Abierto,21-09,"Grilla de Registros - 
+Los datos de las 
+provincias de región 
+""Patagónica"" no son 
+correctos", ,"en la grilla muestra la siguiente informacion:
+
+
+-region: LA PATAGONIA
+-nombre : CHUBUT
+-capital: RAWSON
+-habitantes: 592621 hab.
+-superficie: 224688   km²
+
+-region: LA PATAGONIA
+-nombre : LA PAMPA
+-capital: SANTA ROSA
+-habitantes: 359193 hab.
+-superficie: 143440 km²
+
+-region: LA PATAGONIA
+-nombre : NEUQUEN
+-capital: NEUQUEN
+-habitantes: 710814 hab.
+-superficie: 94078 km²
+
+-region: LA PATAGONIA
+-nombre : RIO NEGRO
+-capital: VIEDMA
+-habitantes: 762067 hab.
+-superficie: 203013 km²
+
+-region: LA PATAGONIA
+-nombre : SANTA CRUZ
+-capital: RIO GALLEGO
+-habitantes: 337226
+-superficie: 243943 km²
+
+-region: LA PATAGONIA
+-nombre : TIERRA DEL FUEGO ,ANTARTIDA E 
+                ISLAS DEL ATLANTICO SUR
+-capital: USHUAIA
+-habitantes: 195000 hab.
+-superficie: 21 571 (excluyendo todo el territorio 
+                  reclamado)
+                  37967 km² (excluyendo a la 
+                  antartida argentina)
+                  1 003 281 (incluyendo todo el 
+                  territorio reclamado) km²","en la grilla muestra la siguiente informacion:
+
+
+-region: PATAGÓNICA
+-nombre : CHUBUT
+-capital: RAWSON
+-habitantes: 509.108 hab.
+-superficie: 224688   km²
+
+-region: PATAGÓNICA
+-nombre : LA PAMPA
+-capital: SANTA ROSA
+-habitantes: 318.951 hab.
+-superficie: 143440 km²
+
+-region: PATAGÓNICA
+-nombre : NEUQUEN
+-capital: NEUQUEN
+-habitantes: 551.266hab.
+-superficie: 94078 km²
+
+-region: PATAGÓNICA
+-nombre : RIO NEGRO
+-capital: VIEDMA
+-habitantes: 638.645 hab.
+-superficie: 203013 km²
+
+-region: PATAGÓNICA
+-nombre : SANTA CRUZ
+-capital: RIO GALLEGO
+-habitantes: 273.964 hab.
+-superficie: 243943 km²
+
+-region: PATAGÓNICA
+-nombre : TIERRA DEL FUEGO ,
+ANTARTIDA E ISLAS DEL ATLANTICO 
+SUR
+-capital: USHUAIA
+-habitantes: 127.205 hab.
+-superficie: 21.5714",,Alta,,,
+91,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""Buenos 
+Aires"" son incorrectos, 
+el sistema se congela
+antes de devolver el 
+resultado","1 - hacer click en combo region 
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con ""BUENOS AIRES""
+5 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+-region: NINGUNA
+-nombre : BUENOS AIRES
+-capital: LA PLATA
+-habitantes: 17523996 hab.
+-superficie: 307571  km² 
+","en la grilla muestra la siguiente informacion:
+
+-region: NINGUNA
+-nombre : BUENOS AIRES
+-capital: LA PLATA
+-habitantes: 15.625.084 hab.
+-superficie: 307571  km² 
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+92,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""Catamarca""
+son incorrectos, el 
+sistema se congela
+antes de devolver el 
+resultado","1 - hacer click en combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con  ""CATAMARCA""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CATAMARCA
+-capital: SAN FERNANDO DEL VALLE DE 
+             CATAMARCA
+-habitantes: 429562 hab.
+-superficie: 102602 km²","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CATAMARCA
+-capital: SAN FERNANDO DEL VALLE DE 
+             CATAMARCA
+-habitantes: 367.828 hab.
+-superficie: 99.633 km²
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+93,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""Chaco""
+son incorrectos, el 
+sistema se congela
+antes de devolver el 
+resultado","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar  con ""CHACO""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CHACO
+-capital: RESISTENCIA
+-habitantes: 1129606 hab.
+-superficie: 99633 km²","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CHACO
+-capital: RESISTENCIA
+-habitantes: 1.055.259 hab.
+-superficie: 102.602 km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+94,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""Chubut""
+son incorrectos, el 
+sistema se congela
+antes de devolver el 
+resultado","1 - hacer click en combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con  ""CHUBUT""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+-region: LA PATAGONIA
+-nombre : CHUBUT
+-capital: RAWSON
+-habitantes: 592621 hab.
+-superficie: 224688   km²","en la grilla muestra la siguiente informacion:
+-region: LA PATAGONIA
+-nombre : CHUBUT
+-capital: RAWSON
+-habitantes: 509.108 hab.
+-superficie: 224.686   km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+95,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+No se muestran los 
+datos de la provincia 
+""Cordoba""","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con ""CORDOBA""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+-region: CENTRO
+-nombre : CORDOBA
+-capital: CORDOBA
+-habitantes: 4011371 hab.
+-superficie: 165321 km² ","El sistema muestra el mensaje ""No hay 
+provincias que coincidan con lo buscado""",,Alta,,,
+96,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""Corrientes""
+son incorrectos, el 
+sistema se congela
+antes de devolver el 
+resultado","1 - hacer click en combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar  con ""CORRIENTES""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+-region: NORTE GRANDE ARGENTINO
+-nombre : CORRIENTES
+-capital: CORRIENTES
+-habitantes: 1212696 hab.
+-superficie: 88199 km²","en la grilla muestra la siguiente informacion:
+-region: NORTE GRANDE ARGENTINO
+-nombre : CORRIENTES
+-capital: CORRIENTES
+-habitantes: 992.595 hab.
+-superficie: 88.199 km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+97,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+No se muestran los 
+datos de la provincia 
+""Entre Rios""","1 - hacer click en combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con ""ENTRE RIOS""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+-region: CENTRO
+-nombre : ENTRE RIOS
+-capital: PARANA
+-habitantes: 1425578 hab.
+-superficie: 78781 km²","El sistema muestra el mensaje ""No hay 
+provincias que coincidan con lo buscado""",,Alta,,,
+98,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""Formosa""
+son incorrectos, el 
+sistema se congela
+antes de devolver el 
+resultado","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con ""FORMOSA""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : FORMOSA
+-capital:  FORMOSA
+-habitantes: 607419 hab.
+-superficie: 72066 km²","en la grilla muestra la siguiente informacion:
+
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : FORMOSA
+-capital:  FORMOSA
+-habitantes: 530.162 hab.
+-superficie: 72.066 km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+99,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""Jujuy""
+son incorrectos, el 
+sistema se congela
+antes de devolver el 
+resultado","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con ""JUJUY""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : JUJUY
+-capital: SAN SALVADOR DE JUJUY
+-habitantes: 811611 hab.
+-superficie:53219 km²","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : JUJUY
+-capital: SAN SALVADOR DE JUJUY
+-habitantes: 673.307 hab.
+-superficie: 53219 km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+100,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""La Rioja""
+son incorrectos, el 
+sistema se congela
+antes de devolver el 
+resultado","1 - hacer click en combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar  con  ""LA RIOJA""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : LA RIOJA
+-capital: LA RIOJA
+-habitantes: 383865 hab.
+-superficie: 89680 km²","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : LA RIOJA
+-capital: LA RIOJA
+-habitantes: 333.642 hab.
+-superficie: 89680 km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+101,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""Mendoza""
+son incorrectos, el 
+sistema se congela
+antes de devolver el 
+resultado","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar  con ""MENDOZA""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NUEVO CUYO
+-nombre : MENDOZA
+-capital: MENDOZA
+-habitantes: 2109540 hab.
+-superficie: 148827  km²","en la grilla muestra la siguiente informacion:
+
+-region: NUEVO CUYO
+-nombre : MENDOZA
+-capital: MENDOZA
+-habitantes: 1.738.929 hab.
+-superficie: 148827  km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+102,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""Misiones""
+son incorrectos, el 
+sistema se congela
+antes de devolver el 
+resultado","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar  con ""MISIONES""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : MISIONES
+-capital: POSADAS
+-habitantes: 1278873 hab.
+-superficie: 29801 km²","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : MISIONES
+-capital: POSADAS
+-habitantes: 1.101.593 hab.
+-superficie: 29801 km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+103,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+No se muestran los 
+datos de la provincia 
+""Neuquen""","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con  ""NEUQUEN""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: LA PATAGONIA
+-nombre : NEUQUEN
+-capital: NEUQUEN
+-habitantes: 710814 hab.
+-superficie: 94078 km²","El sistema muestra el mensaje ""No hay 
+provincias que coincidan con lo buscado""",,Alta,,,
+104,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+No se muestran los 
+datos de la provincia 
+""Rio Negro""","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con  ""RIO NEGRO""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: LA PATAGONIA
+-nombre : RIO NEGRO
+-capital: VIEDMA
+-habitantes: 762067 hab.
+-superficie: 203013 km²","El sistema muestra el mensaje ""No hay 
+provincias que coincidan con lo buscado""",,Alta,,,
+105,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""Salta""
+son incorrectos, el 
+sistema se congela
+antes de devolver el 
+resultado","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con  ""SALTA""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SALTA 
+-capital: SALTA
+-habitantes: 1440672 hab.
+-superficie: 155488 km²","en la grilla muestra la siguiente informacion:
+
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SALTA 
+-capital: SALTA
+-habitantes: 1.214.441 hab.
+-superficie: 155488 km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+106,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""San Juan""
+son incorrectos, el 
+sistema se congela
+antes de devolver el 
+resultado","1 - hacer click combo     region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con  ""SAN JUAN""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 822853 hab.
+-superficie:89651 km²","en la grilla muestra la siguiente informacion:
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 681.055 hab.
+-superficie: 89651 km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+107,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""San Luis""
+son incorrectos, el 
+sistema se congela
+antes de devolver el 
+resultado","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar  con ""SAN LUIS""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: GRAN SAN LUIS
+-habitantes: 542069 hab.
+-superficie: 76748 km²","en la grilla muestra la siguiente informacion:
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: SAN LUIS
+-habitantes: 432.310 hab.
+-superficie: 76748 km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+108,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""Santa Cruz""
+son incorrectos, el 
+sistema se congela
+antes de devolver el 
+resultado","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con  ""SANTA CRUZ""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: LA PATAGONIA
+-nombre : SANTA CRUZ
+-capital: RIO GALLEGO
+-habitantes: 337226 hab.
+-superficie: 243943 km²","en la grilla muestra la siguiente informacion:
+
+-region: LA PATAGONIA
+-nombre : SANTA CRUZ
+-capital: RIO GALLEGO
+-habitantes: 273.964 hab.
+-superficie: 243943 km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+109,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""Santa Fe""
+son incorrectos, el 
+sistema se congela
+antes de devolver el 
+resultado","1 - hacer click en combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con ""SANTA FE""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3556522 hab.
+-superficie: 133007 km²","en la grilla muestra la siguiente informacion:
+
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3.194.537 hab.
+-superficie: 133007 km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+110,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""Santiago del
+Estero"" son incorrectos, 
+el sistema se congela
+antes de devolver el 
+resultado","1 - hacer click en combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar  con 
+     ""SANTIAGO DEL ESTERO""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SANTIAGO DEL ESTERO
+-capital: SANTIAGO DEL ESTERO
+-habitantes: 1054028 hab.
+-superficie: 136351 km²","en la grilla muestra la siguiente informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SANTIAGO DEL ESTERO
+-capital: SANTIAGO DEL ESTERO
+-habitantes: 874.006 hab.
+-superficie: 136351 km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+111,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+No se muestran los 
+datos de la provincia 
+""TIERRA DEL FUEGO 
+ANTARTIDA E ISLAS 
+DEL ATALNTICO SUR""","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con 
+     ""TIERRA DEL FUEGO ANTARTIDA
+     E ISLAS DEL ATLANTICO SUR""
+5 - click en buscar","en la grilla muestra la siguiente informacion:
+
+-region: LA PATAGONIA
+-nombre : TIERRA DEL FUEGO ANTARTIDA E 
+                ISLAS DEL ATALNTICO SUR
+-capital: USHUAIA
+-habitantes: 195000 hab.
+-superficie: 21 571 (excluyendo todo el territorio 
+                  reclamado)
+                  37967 km² (excluyendo a la 
+                  antartida argentina)
+                  1 003 281 (incluyendo todo el 
+                  territorio reclamado) km²","El sistema muestra el mensaje ""No hay 
+provincias que coincidan con lo buscado""",,Alta,,,
+112,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+No se muestran los 
+datos de la provincia 
+""Cordoba"" con el filtro
+Región centro","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""centro""
+3- hacer click en campo nombre
+4 - completar con ""CORDOBA""
+5 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: CENTRO
+-nombre : CORDOBA
+-capital: CORDOBA
+-habitantes: 4011371 hab.
+-superficie: 165321 km² ","El sistema muestra el mensaje ""No hay 
+provincias que coincidan con lo buscado""",,Alta,,,
+114,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""Santiago del
+Estero"" fitrada por
+región son incorrectos","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""norte grande argentino""
+3- hacer click en campo nombre
+4 - completar con ""SALTA""
+5 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SALTA 
+-capital: SALTA
+-habitantes: 1440672 hab.
+-superficie: 155488 km²","en la grilla muestra la siguiente informacion:
+
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SALTA 
+-capital: SALTA
+-habitantes: 1.214.441 hab.
+-superficie: 155488 km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+116,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""San Luis"" 
+fitrada porregión son 
+incorrectos","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""nuevo cuyo""
+3- hacer click en campo nombre
+4 - completar con ""SAN LUIS""
+5 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: GRAN SAN LUIS
+-habitantes: 542069 hab.
+-superficie: 76748 km²","en la grilla muestra la siguiente informacion:
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: SAN LUIS
+-habitantes: 432.310 hab.
+-superficie: 76748 km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+118,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincia ""Chubut"" 
+fitrada por región son 
+incorrectos","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""la patagonia""
+3- hacer click en campo nombre
+4 - completar con ""CHUBUT""
+5 - click en buscar!","en la grilla muestra la siguiente informacion:   
+
+-region: LA PATAGONIA
+-nombre : CHUBUT
+-capital: RAWSON
+-habitantes: 592621 hab.
+-superficie: 224688   km²","en la grilla muestra la siguiente informacion:   
+
+-region: PATAGÓNICA
+-nombre : CHUBUT
+-capital: RAWSON
+-habitantes: 509.108 hab.
+-superficie: 224688   km²
+
+
+El sistema se congela 12 segundos antes
+de devolver el resultado",,Alta,,,
+122,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+No se muestran los 
+datos de la provincia 
+""entre rios"" ingresados
+con minúscula","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con 
+     ""entre rios""
+5 - click en buscar","en la grilla muestra la siguiente informacion:  
+
+-region: CENTRO
+-nombre : ENTRE RIOS
+-capital: PARANA
+-habitantes: 1425578 hab.
+-superficie: 78781 km²","El sistema muestra el mensaje ""No hay 
+provincias que coincidan con lo buscado""",,Alta,,,
+124,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincias ""La Pampa""
+y ""La Rioja"" son 
+incorrectos","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con 
+     ""LA ""
+5 - click en buscar","en la grilla muestra la siguiente informacion:  
+
+-region: LA PATAGONIA
+-nombre : LA PAMPA
+-capital: SANTA ROSA
+-habitantes: 359193 hab.
+-superficie: 143440 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : LA RIOJA
+-capital: LA RIOJA
+-habitantes: 383865 hab.
+-superficie: 89680 km²
+","en la grilla muestra la siguiente informacion:  
+
+-region: PATAGÓNICA
+-nombre : LA PAMPA
+-capital: SANTA ROSA
+-habitantes: 318.951 hab.
+-superficie: 143440 km²
+
+-region: NUEVO CUYO
+-nombre : LA RIOJA
+-capital: LA RIOJA
+-habitantes: 333.642 hab.
+-superficie: 89680 km²
+",,Alta,,,
+125,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincias ""San Juan""
+y ""San Luis"" son 
+incorrectos","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con 
+     ""SAN ""
+5 - click en buscar","en la grilla muestra la siguiente informacion:  
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 822853 hab.
+-superficie:89651 km²
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: GRAN SAN LUIS
+-habitantes: 542069 hab.
+-superficie: 76748 km²","en la grilla muestra la siguiente informacion:  
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 681.055 hab.
+-superficie:89651 km²
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: GRAN SAN LUIS
+-habitantes: 432.310 hab.
+-superficie: 76748 km²",,Alta,,,
+126,V2,Firefox,Abierto,23-09,"Grilla de Registros - 
+Los datos de las 
+provincias filtradas por
+nombre ""SAN"" son 
+incorrectos, el orden
+no coincide con los
+RE","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con 
+     ""SAN""
+5 - click en buscar","en la grilla muestra la siguiente informacion:  
+
+-region: LA PATAGONIA
+-nombre : SANTA CRUZ
+-capital: RIO GALLEGO
+-habitantes: 337226
+-superficie: 243943 km²
+
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3556522 hab.
+-superficie: 133007 km²
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 822853 hab.
+-superficie:89651 km²
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: GRAN SAN LUIS
+-habitantes: 542069 hab.
+-superficie: 76748 km²","en la grilla muestra la siguiente informacion:  
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 681.055 hab.
+-superficie:89651 km²
+
+-region: NUEVO CUYO
+-nombre : SAN LUIS
+-capital: SAN LUIS
+-habitantes: 432.310 hab.
+-superficie: 76748 km²
+
+-region: PATAGÓNICA
+-nombre : SANTA CRUZ
+-capital: RIO GALLEGO
+-habitantes: 273.964 hab.
+-superficie: 243943 km²
+
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3.194.537 hab.
+-superficie: 133007 km²
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SANTIAGO DEL ESTERO
+-capital: SANTIAGO DEL ESTERO
+-habitantes: 874.006 hab.
+-superficie: 136.351 km²",,Alta,,,
+127,V2,Firefox,Abierto,30-09,"Grilla de Registros - 
+Los datos de la
+provincia de Misiones 
+son incorrectos, el 
+sistema se congela 
+antes de devolver los 
+resultados
+","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - hacer click en campo nombre
+4 - completar con 
+     ""MISIONES""
+5 - presionar la tecla enter","en la grilla muestra la siguiente informacion:  
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : MISIONES
+-capital: POSADAS
+-habitantes: 1278873 hab.
+-superficie: 29801 km²","en la grilla muestra la siguiente informacion:  
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : MISIONES
+-capital: POSADAS
+-habitantes: 1.101.593 hab.
+-superficie: 29801 km²
+
+El sistema se congela durante 14 segundos 
+antes de devolver los resultados",,Alta,,,
+129,V2,Firefox,Abierto,30-09,"Grilla de Registros - 
+El ordenamiento 
+alfabético descendente
+de la columna región 
+no coincide con los 
+resultados esperados","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - dejar campo nombre en blanco
+4 - click en buscar
+5 - selecciona la opcion ordenar en la 
+     columna ""region""","el sistema ordena la columna region y muestra 
+las opciones en orden descendente:
+1 - ""Nuevo Cuyo""
+2 - ""Norte Grande Argentino""
+3 - ""Ninguna""
+4 - ""La Patagonia""
+5 - ""Centro""","el sistema ordena la columna region y muestra 
+las opciones en orden descendente:
+1 - ""Patagónica""
+1 - ""Nuevo Cuyo""
+2 - ""Norte Grande Argentino""
+3 - ""Ninguna""
+5 - ""Centro""",,Baja,,,
+130,V2,Firefox,Abierto,30-09,"Grilla de Registros - 
+El ordenamiento 
+alfabético ascendente
+de columna región
+no coincide con los 
+resultados esperados","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - dejar campo nombre en blanco
+4 - click en buscar
+5 - selecciona la opcion ordenar en la 
+     columna ""region""
+6 - Hacer click nuevamente en la 
+opción ordenar","el sistema ordena la columna region y muestra 
+las opciones en orden ascendente:
+
+1 - ""Centro""
+2 - ""La Patagonia""
+3 - ""Ninguna""
+4 - ""Norte Grande Argentino""
+5 - ""Nuevo Cuyo""","el sistema ordena la columna region y muestra 
+las opciones en orden ascendente:
+
+1 - ""Centro""
+2 - ""Ninguna""
+3 - ""Norte Grande Argentino""
+4 - ""Nuevo Cuyo""
+5 - ""Patagónica""",,Baja,,,
+131,V2,Firefox,Abierto,30-09,"Grilla de Registros - 
+El ordenamiento 
+alfabético descendente
+de columna nombre
+es incorrecto, hay un 
+distrito que aparece 
+como provincia","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - dejar campo nombre en blanco
+4 - click en buscar
+5 - selecciona la opcion ordenar en la 
+     columna ""nombre""","el sistema ordena la columna nombre y muestra 
+las opciones en orden descendente:
+
+PROVINCIA DE TUCUMÁN
+PROVINCIA TIERRA DEL FUEGO
+PROVINCIA DE SANTIAGO DEL ESTERO
+PROVINCIA DE SANTA FE
+PROVINCIA DE SANTA CRUZ
+PROVINCIA DE SAN LUIS
+PROVINCIA DE SAN JUAN
+PROVINCIA DE SALTA
+PROVINCIA DE RIO NEGRO
+PROVINCIA DE NEUQUEN
+PROVINCIA DE MISIONES
+PROVINCIA DE MENDOZA
+PROVINCIA DE LA RIOJA
+PROVINCIA DE LA PAMPA
+PROVINCIA DE JUJUY
+PROVINCIA DE FORMOSA
+PROVINCIA DE ENTRE RIOS
+PROVINCIA DE CORRIENTES
+PROVINCIA DE CORDOBA
+PROVINCIA DE CHUBUT
+PROVINCIA DE CHACO
+PROVINCIA DE CATAMARCA
+PROVINCIA DE BUENOS AIRES","el sistema ordena la columna nombre y muestra 
+las opciones en orden descendente:
+
+PROVINCIA DE TUCUMÁN
+PROVINCIA TIERRA DEL FUEGO
+PROVINCIA DE SANTIAGO DEL ESTERO
+PROVINCIA DE SANTA FE
+PROVINCIA DE SANTA CRUZ
+PROVINCIA DE SAN LUIS
+PROVINCIA DE SAN JUAN
+PROVINCIA DE SALTA
+PROVINCIA DE RIO NEGRO
+PROVINCIA DE NEUQUEN
+PROVINCIA DE MISIONES
+PROVINCIA DE MENDOZA
+PROVINCIA DE LA RIOJA
+PROVINCIA DE LA PAMPA
+PROVINCIA DE JUJUY
+PROVINCIA DE FORMOSA
+PROVINCIA DE ENTRE RIOS
+PROVINCIA DE CORDOBA
+PROVINCIA DE CORRIENTES
+CIUDAD AUTÓNOMA DE BUENOS AIRES
+PROVINCIA DE CHUBUT
+PROVINCIA DE CHACO
+PROVINCIA DE CATAMARCA
+PROVINCIA DE BUENOS AIRES",,Alta,,,
+132,V2,Firefox,Abierto,30-09,"Grilla de Registros - 
+Hay un distrito que
+aparece como provincia","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - dejar campo nombre en blanco
+4 - click en buscar
+","el sistema ordena la columna nombre y muestra 
+las opciones en orden descendente:
+
+PROVINCIA DE BUENOS AIRES
+PROVINCIA DE CATAMARCA
+PROVINCIA DE CHACO
+PROVINCIA DE CHUBUT
+PROVINCIA DE CORDOBA
+PROVINICIA DE CORRIENTES
+PROVINCIA DE ENTRE RIOS
+PROVINCIA DE FORMOSA
+PROVINCIA DE JUJUY
+PROVINCIA DE LA PAMPA
+PROVINICIA DE LA RIOJA
+PROVINCIA DE MENDOZA
+PROVINCIA DE MISIONES
+PROVINCIA DE NEUQUEN
+PROVINCIA DE RIO NEGRO
+PROVINCIA DE SALTA
+PROVINCIA DE SAN JUAN
+PROVINCIA DE SAN LUIS 
+PROVINCIA DE SANTA CRUZ
+PROVINCIA DE SANTA FE 
+PROVINCIA DE SANTIAGO DEL ESTERO
+PROVINCIA TIERRA DEL FUEGO
+PROVINCIA DE TUCUMÁN","el sistema ordena la columna nombre y muestra 
+las opciones en orden descendente:
+
+CIUDAD AUTÓNOMA DE BUENOS AIRES
+PROVINCIA DE BUENOS AIRES
+PROVINCIA DE CATAMARCA
+PROVINCIA DE CHACO
+PROVINCIA DE CHUBUT
+PROVINCIA DE CORDOBA
+PROVINICIA DE CORRIENTES
+PROVINCIA DE ENTRE RIOS
+PROVINCIA DE FORMOSA
+PROVINCIA DE JUJUY
+PROVINCIA DE LA PAMPA
+PROVINICIA DE LA RIOJA
+PROVINCIA DE MENDOZA
+PROVINCIA DE MISIONES
+PROVINCIA DE NEUQUEN
+PROVINCIA DE RIO NEGRO
+PROVINCIA DE SALTA
+PROVINCIA DE SAN JUAN
+PROVINCIA DE SAN LUIS 
+PROVINCIA DE SANTA CRUZ
+PROVINCIA DE SANTA FE 
+PROVINCIA DE SANTIAGO DEL ESTERO
+PROVINCIA TIERRA DEL FUEGO
+PROVINCIA DE TUCUMÁN",,Alta,,,
+133,V2,Firefox,Abierto,30-09,"Grilla de Registros - 
+El ordenamiento 
+alfabético ascendente
+de columna capital
+es incorrecto, hay un 
+distrito que aparece 
+como provincia","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - dejar campo nombre en blanco
+4 - click en buscar
+5 - selecciona la opcion ordenar en la 
+     columna ""capital""
+6 - Volver a hacer click en la opción
+ordenar","el sistema ordena la columna capital y muestra 
+las opciones en orden ascendente:
+
+Córdoba
+Corrientes
+Formosa
+La Plata
+La Rioja
+Mendoza
+Neuquén
+Paraná
+Posadas
+Rawson
+Resistencia
+Río Gallegos
+Salta San Fernando del Valle de Catamarca
+San Juan
+San Luis
+San Miguel de Tucumán
+San Salvador de Jujuy
+Santa Fe
+Santa Rosa
+Santiago del Estero
+Ushuaia
+Viedma","el sistema ordena la columna capital y muestra 
+las opciones en orden ascendente:
+
+C.A.B.A
+Corrientes
+Córdoba
+Formosa
+La Plata
+Mendoza
+Neuquén
+Paraná
+Posadas
+Rawson
+Resistencia
+Rioja
+Río Gallegos
+Salta
+Salta San Fernando del Valle de Catamarca
+San Juan
+San Luis
+San Miguel de Tucumán
+San Salvador de Jujuy
+Santa Fe
+Santa Rosa
+Santiago del Estero
+Ushuaia
+Viedma",,Alta,,,
+134,V2,Firefox,Abierto,30-09,"Grilla de Registros - 
+El ordenamiento 
+alfabético descendente
+de columna capital
+es incorrecto, hay un 
+distrito que aparece 
+como provincia","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - dejar campo nombre en blanco
+4 - click en buscar
+5 - selecciona la opcion ordenar en la 
+     columna ""capital""","el sistema ordena la columna capital y muestra 
+las opciones en orden descendente:
+
+Viedma
+Ushuaia
+Santiago del Estero
+Santa Rosa
+Santa Fe
+San Salvador de Jujuy
+San Miguel de Tucumán
+San Luis
+San Juan
+San Fernando del Valle de Catamarca
+Salta
+Río Gallegos 
+Resistencia
+Rawson
+Posadas
+Paraná
+Neuquén
+Mendoza
+La Rioja
+La Plata
+Formosa 
+Corrientes
+Córdoba","el sistema ordena la columna capital y muestra 
+las opciones en orden descendente:
+
+Viedma
+Ushuaia
+Santiago del Estero
+Santa Rosa
+Santa Fe
+San Salvador de Jujuy
+San Miguel de Tucumán
+San Luis
+San Juan
+San Fernando del Valle de Catamarca
+Salta
+Río Gallegos 
+Rioja
+Resistencia
+Rawson
+Posadas
+Paraná
+Neuquén
+Mendoza
+La Plata
+Formosa 
+Córdoba
+Corrientes
+C.A.B.A",,Alta,,,
+135,V2,Firefox,Abierto,30-09,"Grilla de Registros - 
+El ordenamiento 
+ascendente de columna
+ habitantes es incorrecto, 
+los datos son incorrectos 
+y hay un distrito que 
+aparece como provincia","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - dejar campo nombre en blanco
+4 - click en buscar
+5 - selecciona la opcion ordenar en la 
+     columna ""habitantes""
+6 - Volver a hacer click en la opción 
+de ordenar por habitantes","el sistema ordena la columna habitante y muestra 
+las opciones en orden ascendente:
+
+Tierra del Fuego, Antártida e 
+Islas del Atlántico Sur                    – 185.732
+Santa Cruz                                     – 337.226
+La Pampa                                       – 361.859
+La Rioja                                          – 383.865
+Catamarca                                      – 429.562
+San Luis                                          – 542.069
+Chubut                                            – 592.621
+Formosa                                          – 607.419
+Neuquén                                          – 710.814
+Río Negro                                        – 750.768
+Jujuy                                                – 811.611
+San Juan                                          – 822.853
+Santiago del Estero                          – 1.060.906
+Chaco                                               – 1.129.606
+Corrientes                                         – 1.212.696
+Misiones                                            – 1.278.873
+Entre Ríos                                         – 1.425.578
+Salta                                                  – 1.441.351
+Tucumán                                           – 1.731.820
+Mendoza                                           – 2.043.540
+Santa Fe                                           – 3.544.908
+Córdoba                                            – 3.840.905
+Buenos Aires                                    – 17.523.996","el sistema ordena la columna habitante y muestra 
+las opciones en orden ascendente:
+
+Tierra del Fuego, Antártida e 
+Islas del Atlántico Sur                    – 127.205
+Santa Cruz                                     – 273.964
+La Pampa                                       – 318.951
+La Rioja                                          – 333.642
+Catamarca                                      – 367.828
+San Luis                                          – 432.310
+Chubut                                            – 509.108
+Formosa                                          – 530.162
+Neuquén                                          – 551.266
+Río Negro                                        – 638.645
+Jujuy                                                – 673.307
+San Juan                                          – 681.055
+Santiago del Estero                          – 874.006
+Corrientes                                         – 992.595
+Chaco                                               – 1.055.259
+Misiones                                            – 1.101.593
+Salta                                                  – 1.214.441
+Entre Ríos                                         – 1.235.994
+Tucumán                                           – 1.448.188
+Mendoza                                           – 1.738.929
+Ciudad Autnoma de Buenos Aires   _ 2.890.151
+Santa Fe                                           – 3.194.537
+Córdoba                                            – 3.308.876
+Buenos Aires                                    – 15.625.084",,Alta,,,
+136,V2,Firefox,Abierto,30-09,"Grilla de Registros - 
+El ordenamiento 
+descendentede columna 
+habitanteses incorrecto, 
+los datosson incorrectos 
+y hay un distrito que 
+aparece como provincia","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - dejar campo nombre en blanco
+4 - click en buscar
+5 - selecciona la opcion ordenar en la 
+     columna ""habitantes""","el sistema ordena la columna habitantes y muestra 
+las opciones en orden descendente:
+
+Buenos Aires                – 17.523.996
+Córdoba                       – 3.840.905
+Santa Fe                      – 3.544.908
+Mendoza                      – 2.043.540
+Tucumán                      – 1.731.820
+Salta                             – 1.441.351
+Entre Ríos                    – 1.425.578
+Misiones                       – 1.278.873
+Corrientes                    – 1.212.696
+Chaco                          – 1.129.606
+Santiago del Estero     – 1.060.906
+San Juan                     – 822.853
+Jujuy                            – 811.611
+Río Negro                    – 750.768
+Neuquén                      – 710.814
+Formosa                       – 607.419
+Chubut                         – 592.621
+San Luis                       – 542.069
+Catamarca                    – 429.562
+La Rioja                        – 383.865
+La Pampa                     – 361.859
+Santa Cruz                    – 337.226
+Tierra del Fuego, Antártida
+ e Islas del Atlántico Sur  –185.732","el sistema ordena la columna habitantes y muestra 
+las opciones en orden descendente:
+
+Buenos Aires                – 15.625.084
+Córdoba                       – 3.308.876
+Santa Fe                      – 3.194.537
+Ciudad Autónoma de Buenos Aires  _ 2.890.151
+Mendoza                      – 1.738.929
+Tucumán                      – 1.448.188
+Entre Ríos                    – 1.235.994
+Salta                             – 1.214.441
+Misiones                       – 1.101.593
+Chaco                          – 1.055.259
+Corrientes                    – 992.595
+Santiago del Estero     – 874.006
+San Juan                     – 681.055
+Jujuy                            – 673.307
+Río Negro                    – 638.645
+Neuquén                      – 551.266
+Formosa                       – 530.162
+Chubut                         – 509.108
+San Luis                       – 432.310
+Catamarca                    – 367.828
+La Rioja                        – 333.642
+La Pampa                     – 318.951
+Santa Cruz                    – 273.964
+Tierra del Fuego, Antártida
+ e Islas del Atlántico Sur  –127.205",,Alta,,,
+137,V2,Firefox,Abierto,02-10,"Grilla de Registros - 
+El ordenamiento 
+ascendente de columna 
+Km² toma solo los 
+primeros dos dígitos, 
+los datos son incorrectos 
+y hay un distrito que 
+aparece como provincia","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - dejar campo nombre en blanco
+4 - click en buscar
+5 - selecciona la opcion ordenar en la 
+     columna ""km²""
+6 - Hacer click nuevamente en la opción 
+ordenar por columna ""km²""","el sistema ordena la columna km² y muestra 
+las opciones en orden ascendente:
+
+Tierra del Fuego, Antártida e
+ Islas del Atlántico Sur                – 21.571 Km²
+Tucumán                                     – 22.524 Km²
+Misiones                                      – 29.801 Km²
+Jujuy                                            – 53.219 Km²
+Formosa                                      – 72.066 Km²
+San Luis                                       – 76.748 Km²
+Entre Ríos                                    – 78.781 Km²
+Corrientes                                    – 88.199 Km²
+San Juan                                      – 89.651 Km²
+La Rioja                                        – 89.680 Km²
+Neuquén                                       – 94.078 Km²
+Chaco                                           – 99.633 Km²
+Catamarca                                   – 102.602 Km²
+Santa Fe                                      – 133.007 Km²
+Santiago del Estero                     – 136.351 Km²
+La Pampa                                    – 143.440 Km²
+Mendoza                                      – 148.827 Km²
+Salta                                            – 155.488 Km²
+Córdoba                                       – 165.321 Km²
+Río Negro                                    – 203.013 Km²
+Chubut                                         – 224.686 Km²
+Santa Cruz                                   – 243.943 Km²
+Buenos Aires                               – 307.571 Km²","el sistema ordena la columna km² y muestra 
+las opciones en orden ascendente:
+
+Chaco                           - 102.602 Km²
+Santa Fe                       - 133.007 Km²
+Santiago del Estero      - 136.351 Km²
+La Pampa                     - 143.440 Km²
+Mendoza                       - 148.827 Km²
+Salta                             - 155.488 Km²
+Córdoba                       - 165.321 Km²
+C.A.B.A                        - 200 Km²
+Río Negro                     - 203.013 Km²
+Tierra del Fuego           - 21.5714 Km²
+Tucumán                      - 22.524 Km²
+Chubut                          - 224.686 Km²
+Santa Cruz                    - 243.943 Km²
+Misiones                       - 29.801 Km²
+Buenos Aires               - 307.571 Km²
+Jujuy                           -  53.219 Km²
+Formosa                      - 72.066 Km²
+San Luis                      - 76.748 Km²
+Entre Ríos                   - 78.781 Km²
+Corrientes                    - 88.199 Km²
+San Juan                     - 89.651 Km²
+La Rioja                       - 89.680 Km²
+Neuquén                      - 94.078 Km²
+Catamarca                   - 99.633 Km²",,,,,
+138,V2,Firefox,Abierto,02-10,"Grilla de Registros - 
+El ordenamiento 
+descendente de 
+columna Km² toma 
+solo los primeros dos 
+dígitos, los datos son 
+incorrectos y hay un 
+distrito que aparece 
+como provincia","1 - hacer click en  combo region
+2 - selecionar opcion "" todas ""
+3 - dejar campo nombre en blanco
+4 - click en buscar
+5 - selecciona la opcion ordenar en la 
+     columna ""km²""","el sistema ordena la columna km² y muestra 
+las opciones en orden descendente:
+
+Buenos Aires                             – 307.571 Km²
+Santa Cruz                                – 243.943 Km²
+Chubut                                      – 224.686 Km²
+Río Negro                                  – 203.013 Km²
+Córdoba                                    – 165.321 Km²
+Salta                                          – 155.488 Km²
+Mendoza                                    – 148.827 Km²
+La Pampa                                  – 143.440 Km²
+Santiago del Estero                   – 136.351 Km²
+Santa Fe                                    – 133.007 Km²
+Catamarca                                 – 102.602 Km²
+Chaco                                        – 99.633 Km²
+Neuquén                                    – 94.078 Km²
+La Rioja                                     – 89.680 Km²
+San Juan                                   – 89.651 Km²
+Corrientes                                  – 88.199 Km²
+Entre Ríos                                  – 78.781 Km²
+San Luis                                     – 76.748 Km²
+Formosa                                     – 72.066 Km²
+Jujuy                                           – 53.219 Km²
+Misiones                                      – 29.801 Km²
+Tucumán                                      – 22.524 Km²
+Tierra del Fuego, Antártida e
+ Islas del Atlántico Sur                  – 21.571 Km²","el sistema ordena la columna km² y muestra 
+las opciones en orden descendente:
+
+Catamarca                   - 99.633 Km²
+Neuquén                      - 94.078 Km²
+La Rioja                       - 89.680 Km²
+San Juan                     - 89.651 Km²
+Corrientes                    - 88.199 Km²
+Entre Ríos                   - 78.781 Km²
+San Luis                      - 76.748 Km²
+Formosa                      - 72.066 Km²
+Jujuy                           - 53.219 Km²
+Buenos Aires               - 307.571 Km²
+Misiones                       - 29.801 Km²
+Santa Cruz                    - 243.943 Km²
+Chubut                          - 224.686 Km²
+Tucumán                      - 22.524 Km²
+Tierra del Fuego           - 21.5714 Km²
+Río Negro                     - 203.013 Km²
+C.A.B.A                        - 200 Km²
+Córdoba                       - 165.321 Km²
+Salta                             - 155.488 Km²
+Mendoza                       - 148.827 Km²
+La Pampa                     - 143.440 Km²
+Santiago del Estero      - 136.351 Km²
+Santa Fe                       - 133.007 Km²
+Chaco                           - 102.602 Km²",,,,,
+139,V2,Firefox,Abierto,02-10,"Grilla de Registros - 
+Los datos de cantidad
+de habitantes de la
+provincia de  ""Santa Fe""
+son erróneos, el sistema
+se congela antes de 
+responder","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""centro""
+3- hacer click en campo nombre
+4 - completar con ""SANTA FE""
+5 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3556522 hab.
+-superficie: 133007 km²","El sistema se congela durante 12 segundos y
+luego muestra en la grilla la siguente 
+información:
+
+-region: CENTRO
+-nombre : SANTA FE
+-capital: SANTA FE
+-habitantes: 3.194.537 hab.
+-superficie: 133.007 km²",,,,,
+140,V2,Firefox,Abierto,02-10,"Campo Nombre - 
+El campo nombre
+no reconoce la
+provincia ""Entre Rios""
+sin tilde","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""centro""
+3- hacer click en campo nombre
+4 - completar con ""ENTRE RIOS""
+5 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+-region: CENTRO
+-nombre : ENTRE RIOS
+-capital: PARANA
+-habitantes: 1425578 hab.
+-superficie: 78781 km²
+","El sistema devuelve el siguiente mensaje:
+""No hay provincias que coincidan con lo 
+buscado""",,,,,
+141,V2,Firefox,Abierto,02-10,"Grilla de Registros - 
+Los datos de cantidad
+de habitantes de la
+provincia de  ""La 
+Pampa"" son erróneos,
+el sistema se congela 
+antes de responder","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""la patagonia""
+3- hacer click en campo nombre
+4 - completar con ""LA PAMPA""
+5 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+-region: LA PATAGONIA
+-nombre : LA PAMPA
+-capital: SANTA ROSA
+-habitantes: 359193 hab.
+-superficie: 143440 km²","El sistema se congela durante 12 segundos y 
+luego muestra en la grilla la siguente 
+información:
+
+-region: PATAGONICA
+-nombre : LA PAMPA
+-capital: SANTA ROSA
+-habitantes: 318.951 hab.
+-superficie: 143.440 km²",,,,,
+142,V2,Firefox,Abierto,02-10,"Campo Nombre - 
+El campo nombre
+no reconoce la
+provincia ""Neuquen""
+sin tilde","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""la patagonia""
+3- hacer click en campo nombre
+4 - completar con ""NEUQUEN""
+5 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+-region: LA PATAGONIA
+-nombre : NEUQUEN
+-capital: NEUQUEN
+-habitantes: 710814 hab.
+-superficie: 94078 km²","El sistema devuelve el siguiente mensaje:
+""No hay provincias que coincidan con lo 
+buscado""",,,,,
+143,V2,Firefox,Abierto,02-10,"Campo Nombre - 
+El campo nombre
+no reconoce la
+provincia ""Rio Negro""
+sin tilde","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""la patagonia""
+3- hacer click en campo nombre
+4 - completar con ""RIO NEGRO""
+5 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+-region: LA PATAGONIA
+-nombre : RIO NEGRO
+-capital: VIEDMA
+-habitantes: 762067 hab.
+-superficie: 203013 km²","El sistema devuelve el siguiente mensaje:
+""No hay provincias que coincidan con lo 
+buscado""",,,,,
+144,V2,Firefox,Abierto,02-10,"Grilla de Registros - 
+Los datos de cantidad
+de habitantes de la
+provincia de  ""La 
+Pampa"" son erróneos,
+el sistema se congela 
+antes de responder","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""la patagonia""
+3- hacer click en campo nombre
+4 - completar con ""SANTA CRUZ""
+5 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+-region: LA PATAGONIA
+-nombre : SANTA CRUZ
+-capital: RIO GALLEGO
+-habitantes: 337226
+-superficie: 243943 km²","El sistema se congela durante 12 segundos y 
+luego muestra en la grilla la siguente 
+información:
+
+-region: PATAGÓNICA
+-nombre : SANTA CRUZ
+-capital: RIO GALLEGOS
+-habitantes: 273.964 hab
+-superficie: 243.943 km²",,,,,
+145,V2,Firefox,Abierto,02-10,"Campo Nombre - 
+El campo nombre
+solo reconoce la
+provincia ""Tierra del 
+Fuego"" sin ""Antártida e
+Islas del Atlántico Sur""","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""la patagonia""
+3- hacer click en campo nombre
+4 - completar con ""TIERRA DEL FUEGO,
+     ANTARTIDA E ISLAS DEL 
+     ATLANTICO SUR""
+5 - click en buscar!","en la grilla muestra la siguiente informacion:
+
+-region: LA PATAGONIA
+-nombre : TIERRA DEL FUEGO ANTARTIDA E 
+                ISLAS DEL ATALNTICO SUR
+-capital: USHUAIA
+-habitantes: 195000 hab.
+-superficie: 21 571 (excluyendo todo el territorio 
+                  reclamado)
+                  37967 km² (excluyendo a la 
+                  antartida argentina)
+                  1 003 281 (incluyendo todo el 
+                  territorio reclamado) km²","El sistema devuelve el siguiente mensaje:
+""No hay provincias que coincidan con lo 
+buscado""",,,,,
+146,V2,Firefox,Abierto,02-10,"Grilla de Registros - 
+Los datos de cantidad
+de habitantes y de 
+superficie de la
+provincia de ""Catamarca"" 
+son erróneos, el sistema 
+se congela antes de 
+responder","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""norte grande argentino""
+3- hacer click en campo nombre
+4 - completar con ""CATAMARCA""
+5 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CATAMARCA
+-capital: SAN FERNANDO DEL VALLE DE 
+             CATAMARCA
+-habitantes: 429562 hab.
+-superficie: 102602 km²","El sistema se congela durante 12 segundos y 
+luego muestra en la grilla la siguente 
+información:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CATAMARCA
+-capital: SAN FERNANDO DEL VALLE DE 
+             CATAMARCA
+-habitantes: 367.828hab.
+-superficie: 99.633 km²",,,,,
+147,V2,Firefox,Abierto,02-10,"Grilla de Registros - 
+Los datos de cantidad
+de habitantes de la
+provincia de ""Corrientes""
+son erróneos, el sistema 
+se congela antes de 
+responder","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""norte grande argentino""
+3- hacer click en campo nombre
+4 - completar con ""CORRIENTES""
+5 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CORRIENTES
+-capital: CORRIENTES
+-habitantes: 1212696 hab.
+-superficie: 88199 km²","El sistema se congela durante 12 segundos y 
+luego muestra en la grilla la siguente 
+información:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CORRIENTES
+-capital: CORRIENTES
+-habitantes: 992.595 hab.
+-superficie: 88.199 km²",,,,,
+148,V2,Firefox,Abierto,02-10,"Grilla de Registros - 
+Los datos de cantidad
+de habitantes y de 
+superficie de la
+provincia de ""Chaco"" 
+son erróneos, el sistema 
+se congela antes de 
+responder","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""norte grande argentino""
+3- hacer click en campo nombre
+4 - completar con ""CHACO""
+5 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CHACO
+-capital: RESISTENCIA
+-habitantes: 1129606 hab.
+-superficie: 99633 km²","El sistema se congela durante 12 segundos y 
+luego muestra en la grilla la siguente 
+información:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : CHACO
+-capital: RESISTENCIA
+-habitantes: 1.055.259 hab.
+-superficie: 102.602 km²",,,,,
+149,V2,Firefox,Abierto,02-10,"Grilla de Registros - 
+Los datos de cantidad
+de habitantes de la
+provincia de ""Formosa""
+son erróneos, el sistema 
+se congela antes de 
+responder","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""norte grande argentino""
+3- hacer click en campo nombre
+4 - completar con ""FORMOSA""
+5 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : FORMOSA
+-capital:  FORMOSA
+-habitantes: 607419 hab.
+-superficie: 72066 km²","El sistema se congela durante 12 segundos y 
+luego muestra en la grilla la siguente 
+información:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : FORMOSA
+-capital:  FORMOSA
+-habitantes: 530.162 hab.
+-superficie: 72.066 km²",,,,,
+150,V2,Firefox,Abierto,02-10,"Grilla de Registros - 
+Los datos de cantidad
+de habitantes de la
+provincia de ""Jujuy""
+son erróneos, el sistema 
+se congela antes de 
+responder","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""norte grande argentino""
+3- hacer click en campo nombre
+4 - completar con ""JUJUY""
+5 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : JUJUY
+-capital: SAN SALVADOR DE JUJUY
+-habitantes: 811611 hab.
+-superficie:53219 km²","El sistema se congela durante 12 segundos y 
+luego muestra en la grilla la siguente 
+información:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : JUJUY
+-capital: SAN SALVADOR DE JUJUY
+-habitantes: 673.307 hab.
+-superficie: 53.219 km²",,,,,
+151,V2,Firefox,Abierto,02-10,"Campo Nombre - 
+El sistema no encuentra
+la provincia de ""La Rioja""
+con el filtro de región
+""Norte Grande Argentino""","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""norte grande argentino""
+3- hacer click en campo nombre
+4 - completar con ""LA RIOJA""
+5 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : LA RIOJA
+-capital: LA RIOJA
+-habitantes: 383865 hab.
+-superficie: 89680 km²","El sistema devuelve el siguiente mensaje:
+""No hay provincias que coincidan con lo 
+buscado""",,,,,
+152,V2,Firefox,Abierto,02-10,"Grilla de Registros - 
+Los datos de cantidad
+de habitantes de la
+provincia de ""Misiones""
+son erróneos, el sistema 
+se congela antes de 
+responder","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""norte grande argentino""
+3- hacer click en campo nombre
+4 - completar con ""MISIONES""
+5 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : MISIONES
+-capital: POSADAS
+-habitantes: 1278873 hab.
+-superficie: 29801 km²","El sistema se congela durante 12 segundos y 
+luego muestra en la grilla la siguente 
+información:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : MISIONES
+-capital: POSADAS
+-habitantes: 1.101.593 hab.
+-superficie: 29801 km²",,,,,
+153,V2,Firefox,Abierto,02-10,"Campo Nombre - 
+El campo nombre
+no reconoce la
+provincia ""Tucuman""
+sin tilde","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""norte grande argentino""
+3- hacer click en campo nombre
+4 - completar con ""TUCUMAN""
+5 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : TUCUMAN
+-capital: SAN MIGUEL DE TUCUMAN
+-habitantes: 1731820 hab
+-superficie: 22592 km²","El sistema devuelve el siguiente mensaje:
+""No hay provincias que coincidan con lo 
+buscado""",,,,,
+154,V2,Firefox,Abierto,02-10,"Grilla de Registros - 
+Los datos de cantidad
+de habitantes de la
+provincia de ""Santiago
+del Estero"" son 
+erróneos, el sistema 
+se congela antes de 
+responder","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""norte grande argentino""
+3- hacer click en campo nombre
+4 - completar con ""SANTIAGO DEL 
+     ESTERO""
+5 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SANTIAGO DEL ESTERO
+-capital: SANTIAGO DEL ESTERO
+-habitantes: 1054028 hab.
+-superficie: 136351 km²","El sistema se congela durante 12 segundos y 
+luego muestra en la grilla la siguente 
+información:
+
+-region: NORTE GRANDE ARGENTINO
+-nombre : SANTIAGO DEL ESTERO
+-capital: SANTIAGO DEL ESTERO
+-habitantes: 874.006 hab.
+-superficie: 136351 km²",,,,,
+155,V2,Firefox,Abierto,02-10,"Grilla de Registros - 
+Los datos de cantidad
+de habitantes de la
+provincia de ""Mendoza""
+son erróneos, el 
+sistema se congela 
+antes de responder","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""nuevo cuyo""
+3- hacer click en campo nombre
+4 - completar con ""MENDOZA""
+5 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: NUEVO CUYO
+-nombre : MENDOZA
+-capital: MENDOZA
+-habitantes: 2109540 hab.
+-superficie: 148827  km²","El sistema se congela durante 12 segundos y 
+luego muestra en la grilla la siguente 
+información:
+
+-region: NUEVO CUYO
+-nombre : MENDOZA
+-capital: MENDOZA
+-habitantes: 1.738.929 hab.
+-superficie: 148.827  km²",,,,,
+156,V2,Firefox,Abierto,02-10,"Grilla de Registros - 
+Los datos de cantidad
+de habitantes de la
+provincia de ""San Juan""
+son erróneos, el 
+sistema se congela 
+antes de responder","1 - Hacer click en combo region 
+     (se depliega un menu)
+2 - Elegir ""nuevo cuyo""
+3- hacer click en campo nombre
+4 - completar con ""SAN JUAN""
+5 - click en buscar!","en la grilla se despliega la siguiente 
+informacion:
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 822853 hab.
+-superficie:89651 km²","El sistema se congela durante 12 segundos y 
+luego muestra en la grilla la siguente 
+información:
+
+-region: NUEVO CUYO
+-nombre : SAN JUAN
+-capital: SAN JUAN
+-habitantes: 681.055 hab.
+-superficie: 89.651 km²",,,,,

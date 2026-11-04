@@ -1,0 +1,1792 @@
+ID,Version,Estado del test case,Fecha de diseño,Descripción,Precondiciones,Pasos del test,Resultado Esperado,Resultado Obtenido,Aclaraciones / comentarios,,,,,
+1,V1,Cerrado ,26-08,"Visualizar la paǵina de
+Provinciano","1 - Ingresar a la página de 
+Provinciano",1 - Visualizar la página de Provinciano,"El sistema muestra en la pantalla:
+Títulos: 
+- Provinciano
+- Buscador de datos sobre Provincias de la República Argentina
+Campos:
+- Región (Combo, valor por defecto ""Todas"")
+- Nombre (Vacío)
+Opción: Buscar!",ok,,https://nahual.github.io/qc-provinciano/especificaciones.html,,,,https://docs.google.com/spreadsheets/d/1fs9NCBRIYO3moa0zDEJljnGIp9YKgFCIWaGm9W6CNQw/edit?gid=2304060#gid=2304060
+2,V1,Cerrado ,26-08,"Visualizar el menú 
+Combo","1 - Ingresar a la página de 
+Provinciano
+2 - Hacer click en el botón combo
+del menú desplegable del campo
+Región","1 - Visualizar el menú Combo 
+desplegado","El menú Combo se despliega mostrando las 
+opciones en orden alfabético:
+1 - ""Centro""
+2 - ""Ninguna""
+3 - ""Norte Grande Argentino""
+4 - ""Nuevo Cuyo""
+5 - ""Patagonia""
+6 - ""Todas""","El menú combo no muestras las opciones de manera alfabetica, y la opcion ""Ninguna"" figura en blanco",,https://nahual.github.io/qc-provinciano/provinciano_1.html,,,,
+3,V1,Cerrado ,26-08,"Verificar en el menú 
+Combo seleccionar 
+una región","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Centro""","El menú Combo colapsa y la opción seleccionada
+cambia a ""Centro""","La grilla muestra todas las provincias argentinas, exceptuando ""Jujuy"" y ""Corrientes""",,,,,,
+4,V1,Cerrado ,26-08,"Verificar en el menú 
+Combo seleccionar la 
+región ""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Todas""","El menú Combo colapsa y la opción seleccionada
+sigue siendo ""Todas""","La grilla muestra todas las provincias argentinas, exceptuando ""Jujuy"" y ""Corrientes""",,,,,,
+5,V1,Abierto ,26-08,"Visualizar la grilla de 
+registros","1 - Ingresar a la página de 
+Provinciano
+2 - Dejar el menú desplegable en 
+""Todas""
+3 - Hacer click en el campo 
+Nombre 
+4 - Llenar el campo con 
+""Neuquén""
+5 - Hacer click en el botón 
+""Buscar!""",1 - Visualizar la grilla de registros,"El sistema muestra una grilla que contiene los 
+registros que coincidan con el criterio de búsqueda 
+seleccionado
+Columnas y datos:
+Región: Patagonia
+Nombre: Neuquén
+Capital: Neuquén
+Habitantes: 710.814
+Km²: 94.078
+Se encuentran disponibles opciones para ordenar 
+por cualquiera de las columnas",,,,,,,
+6,V1,Abierto ,28-08,"Verificar en la página 
+de Provinciano el 
+botón ""Buscar!""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Neuquén""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con las siguientes 
+columnas y datos:
+Región: Patagonia
+Nombre: Neuquén
+Capital: Neuquén
+Habitantes: 710.814
+Km²: 94.078",,,,,,,
+7,V1,Cerrado ,28-08,"Verificar en la página 
+de Provinciano buscar
+todas las provincias de
+la región ""Centro""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Centro""
+3 - Dejar el campo Nombre vacío
+4 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con los siguientes
+datos:
+1 - Región: Centro
+Nombre: Córdoba
+Capital: Córdoba
+Habitantes: 3.840.905
+Km²: 165.321
+2 - Región: Centro
+Nombre: Entre Ríos
+Capital: Paraná
+Habitantes: 1.425.578
+Km²: 78.781
+3 - Región: Centro
+Nombre: Santa Fe
+Capital: Santa Fe
+Habitantes: 3.544.908
+Km²: 133.007",,,,,,,
+8,V1,Cerrado ,28-08,"Verificar en la página 
+de Provinciano buscar
+seleccionando la 
+opción ""Ninguna""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Ninguna""
+3 - Dejar el campo Nombre vacío
+4 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Ninguna
+Nombre: Buenos Aires
+Capital: La Plata
+Habitantes: 17.523.996
+Km²: 307.571",,,,,,,
+9,V1,Cerrado ,28-08,"Verificar en la página 
+de Provinciano buscar
+todas las provincias de
+la región ""Norte 
+Grande Argentino""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Norte
+Grande Argentino""
+3 - Dejar el campo Nombre vacío
+4 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con los siguientes
+datos:
+1 - Región: Norte Grande Argentino
+Nombre: Catamarca
+Capital: San Fernando del Valle de Catamarca
+Habitantes: 429.562
+Km²: 102.602
+2 - Región: Norte Grande Argentino
+Nombre: Chaco
+Capital: Resistencia
+Habitantes: 1.129.606
+Km²: 99.633
+3 - Región: Norte Grande Argentino
+Nombre: Corrientes
+Capital: Corrientes
+Habitantes: 1.212.696
+Km²: 88.199
+4 - Región: Norte Grande Argentino
+Nombre: Formosa
+Capital: Formosa
+Habitantes: 607.419
+Km²: 72.066
+5 - Región: Norte Grande Argentino
+Nombre: Jujuy
+Capital: San Salvador de Jujuy
+Habitantes: 811.611
+Km²: 53.219
+6 - Región: Norte Grande Argentino
+Nombre: La Rioja
+Capital: La Rioja
+Habitantes: 383.865
+Km²: 89.680
+7 - Región: Norte Grande Argentino
+Nombre: Misiones
+Capital: Posadas
+Habitantes: 1.278.873
+Km²: 29.801
+8 - Región: Norte Grande Argentino
+Nombre: Salta
+Capital: Salta
+Habitantes: 1.441.351
+Km²: 155.488
+9 - Región: Norte Grande Argentino
+Nombre: Santiago del Estero
+Capital: Santiago del Estero
+Habitantes: 1.060.906
+Km²: 136.351
+10 - Región: Norte Grande Argentino
+Nombre: Tucumán
+Capital: San Miguel de Tucumán
+Habitantes: 1.731.820
+Km²: 22.524",,,,,,,
+10,V1,Cerrado ,28-08,"Verificar en la página 
+de Provinciano buscar
+todas las provincias de
+la región ""Nuevo Cuyo""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Nuevo
+Cuyo""
+3 - Dejar el campo Nombre vacío
+4 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con los siguientes
+datos:
+1 - Región: Nuevo Cuyo
+Nombre: Mendoza
+Capital: Mendoza
+Habitantes: 2.043.540
+Km²: 148.827
+2 - Región: Nuevo Cuyo
+Nombre: San Juan
+Capital: San Juan
+Habitantes: 822.853
+Km²: 89.651
+3 - Región: Nuevo Cuyo
+Nombre: San Luis
+Capital: San Luis
+Habitantes: 542.069
+Km²: 76.748",,,,,,,
+11,V1,Cerrado ,28-08,"Verificar en la página 
+de Provinciano buscar
+todas las provincias de
+la región ""Patagonia""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción 
+""Patagonia""
+3 - Dejar el campo Nombre vacío
+4 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con los siguientes
+datos:
+1 - Región: Patagonia
+Nombre: Chubut
+Capital: Rawson
+Habitantes: 592.621
+Km²: 224.686
+2 - Región: Patagonia
+Nombre: La Pampa
+Capital: Santa Rosa
+Habitantes: 361.859
+Km²: 143.440
+3 - Región: Patagonia
+Nombre: Neuquén
+Capital: Neuquén
+Habitantes: 710.814
+Km²: 94.078
+4 - Región: Patagonia
+Nombre: Río Negro
+Capital: Viedma
+Habitantes: 750.768
+Km²: 203.013
+5 - Región: Patagonia
+Nombre: Santa Cruz
+Capital: Río Gallegos
+Habitantes: 337.226
+Km²: 243.943
+6 - Región: Patagonia
+Nombre: Tierra del Fuego, Antártida e Islas del 
+Atlántico Sur
+Capital: Ushuaia
+Habitantes: 185.732
+Km²: 21.571",,,,,,,
+12,V1,Abierto ,28-08,"Verificar en la página 
+de Provinciano buscar
+seleccionando la 
+opción ""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción 
+""Todas""
+3 - Dejar el campo Nombre vacío
+4 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con los siguientes
+datos:
+1 - Región: Ninguna
+Nombre: Buenos Aires
+Capital: La Plata
+Habitantes: 17.523.996
+Km²: 307.571
+2 - Región: Norte Grande Argentino
+Nombre: Catamarca
+Capital: San Fernando del Valle de Catamarca
+Habitantes: 429.562
+Km²: 102.602
+3 - Región: Norte Grande Argentino
+Nombre: Chaco
+Capital: Resistencia
+Habitantes: 1.129.606
+Km²: 99.633
+4 - Región: Patagonia
+Nombre: Chubut
+Capital: Rawson
+Habitantes: 592.621
+Km²: 224.686
+5 - Región: Centro
+Nombre: Córdoba
+Capital: Córdoba
+Habitantes: 3.840.905
+Km²: 165.321
+6 - Región: Norte Grande Argentino
+Nombre: Corrientes
+Capital: Corrientes
+Habitantes: 1.212.696
+Km²: 88.199
+7 - Región: Centro
+Nombre: Entre Ríos
+Capital: Paraná
+Habitantes: 1.425.578
+Km²: 78.781
+8 - Región: Norte Grande Argentino
+Nombre: Formosa
+Capital: Formosa
+Habitantes: 607.419
+Km²: 72.066
+9 - Región: Norte Grande Argentino
+Nombre: Jujuy
+Capital: San Salvador de Jujuy
+Habitantes: 811.611
+Km²: 53.219
+10 - Región: Patagonia
+Nombre: La Pampa
+Capital: Santa Rosa
+Habitantes: 361.859
+Km²: 143.440
+11 - Región: Norte Grande Argentino
+Nombre: La Rioja
+Capital: La Rioja
+Habitantes: 383.865
+Km²: 89.680
+12 - Región: Nuevo Cuyo
+Nombre: Mendoza
+Capital: Mendoza
+Habitantes: 2.043.540
+Km²: 148.827
+13 - Región: Norte Grande Argentino
+Nombre: Misiones
+Capital: Posadas
+Habitantes: 1.278.873
+Km²: 29.801
+14 - Región: Patagonia
+Nombre: Neuquén
+Capital: Neuquén
+Habitantes: 710.814
+Km²: 94.078
+15 - Región: Patagonia
+Nombre: Río Negro
+Capital: Viedma
+Habitantes: 750.768
+Km²: 203.013
+16 - Región: Norte Grande Argentino
+Nombre: Salta
+Capital: Salta
+Habitantes: 1.441.351
+Km²: 155.488
+17 - Región: Nuevo Cuyo
+Nombre: San Juan
+Capital: San Juan
+Habitantes: 822.853
+Km²: 89.651
+18 - Región: Nuevo Cuyo
+Nombre: San Luis
+Capital: San Luis
+Habitantes: 542.069
+Km²: 76.748
+19 - Región: Patagonia
+Nombre: Santa Cruz
+Capital: Río Gallegos
+Habitantes: 337.226
+Km²: 243.943
+20 - Región: Centro
+Nombre: Santa Fe
+Capital: Santa Fe
+Habitantes: 3.544.908
+Km²: 133.007
+21 - Región: Norte Grande Argentino
+Nombre: Santiago del Estero
+Capital: Santiago del Estero
+Habitantes: 1.060.906
+Km²: 136.351
+22 - Región: Patagonia
+Nombre: Tierra del Fuego, Antártida e Islas del 
+Atlántico Sur
+Capital: Ushuaia
+Habitantes: 185.732
+Km²: 21.571
+23 - Región: Norte Grande Argentino
+Nombre: Tucumán
+Capital: San Miguel de Tucumán
+Habitantes: 1.731.820
+Km²: 22.524",,,,,,,
+13,V1,Cerrado ,31-08,"Verificar en la página 
+de Provinciano 
+completar el campo 
+Nombre con números","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""12345""
+4 - Hacer click en el botón ""Buscar!""","El sistema muestra en la grilla el mensaje “No hay 
+provincias que coincidan con lo buscado”",,,,,,,
+14,V1,Cerrado ,31-08,"Verificar en la página 
+de Provinciano 
+completar el campo 
+Nombre con caracteres
+especiales","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""San_Juan""
+4 - Hacer click en el botón ""Buscar!""","El sistema muestra en la grilla el mensaje “No hay 
+provincias que coincidan con lo buscado”",,,,,,,
+15,V1,Cerrado ,31-08,"Verificar en la página 
+de Provinciano 
+completar el campo 
+Nombre con un espacio
+luego de la provincia","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""Neuquén ""
+4 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con las siguientes 
+columnas y datos:
+Región: Patagonia
+Nombre: Neuquén
+Capital: Neuquén
+Habitantes: 710.814
+Km²: 94.078",,,,,,,
+16,V1,Abierto ,31-08,"Verificar en la página 
+de Provinciano buscar 
+con la tecla Enter","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""Neuquén""
+4 - Presionar la tecla Enter","El sistema muestra una grilla con las siguientes 
+columnas y datos:
+Región: Patagonia
+Nombre: Neuquén
+Capital: Neuquén
+Habitantes: 710.814
+Km²: 94.078",,,,,,,
+17,V1,Abierto ,31-08,"Verificar en la página 
+de Provinciano 
+completar el campo 
+Nombre con minúsculas","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""neuquén""
+4 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con las siguientes 
+columnas y datos:
+Región: Patagonia
+Nombre: Neuquén
+Capital: Neuquén
+Habitantes: 710.814
+Km²: 94.078",,,,,,,
+18,V1,Abierto ,31-08,"Verificar en la página 
+de Provinciano 
+completar el campo 
+Nombre con 
+mayúsculas","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""NEUQUÉN""
+4 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con las siguientes 
+columnas y datos:
+Región: Patagonia
+Nombre: Neuquén
+Capital: Neuquén
+Habitantes: 710.814
+Km²: 94.078",,,,,,,
+19,V1,Abierto ,31-08,"Verificar en la página 
+de Provinciano 
+completar el campo 
+Nombre con un espacio
+luego de ""San""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""San ""
+4 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con los siguientes
+datos:
+1 - Región: Nuevo Cuyo
+Nombre: San Juan
+Capital: San Juan
+Habitantes: 822.853
+Km²: 89.651
+2 - Región: Nuevo Cuyo
+Nombre: San Luis
+Capital: San Luis
+Habitantes: 542.069
+Km²: 76.748
+3 - Región: Patagonia
+Nombre: Santa Cruz
+Capital: Río Gallegos
+Habitantes: 337.226
+Km²: 243.943
+4 - Región: Centro
+Nombre: Santa Fe
+Capital: Santa Fe
+Habitantes: 3.544.908
+Km²: 133.007
+5 - Región: Norte Grande Argentino
+Nombre: Santiago del Estero
+Capital: Santiago del Estero
+Habitantes: 1.060.906
+Km²: 136.351",,,,,,,
+20,V1,Abierto ,31-08,"Verificar en la Página
+de Provinciano buscar
+""Santa Cruz"" en 
+región ""Centro""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Centro""
+3 - Hacer click en el campo Nombre
+4 - Completar con ""Santa Cruz""
+5 - Hacer click en el botón ""Buscar!""","El sistema muestra en la grilla el mensaje “No hay 
+provincias que coincidan con lo buscado”",,,,,,,
+21,V1,Abierto ,31-08,"Verificar en la Página
+de Provinciano buscar
+""Santa Fe"" en 
+región ""Centro""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Centro""
+3 - Hacer click en el campo Nombre
+4 - Completar con ""Santa Fe""
+5 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con los siguientes
+datos:
+Región: Centro
+Nombre: Santa Fe
+Capital: Santa Fe
+Habitantes: 3.544.908
+Km²: 133.007",,,,,,,
+22,V1,Abierto ,31-08,"Verificar en la Página
+de Provinciano buscar
+""Santa Fe"" en 
+región ""Ninguna""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Ninguna""
+3 - Hacer click en el campo Nombre
+4 - Completar con ""Santa Fe""
+5 - Hacer click en el botón ""Buscar!""","El sistema muestra en la grilla el mensaje “No hay 
+provincias que coincidan con lo buscado”",,,,,,,
+23,V1,Abierto ,31-08,"Verificar en la Página
+de Provinciano buscar
+""Buenos Aires"" en 
+región ""Ninguna""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Ninguna""
+3 - Hacer click en el campo Nombre
+4 - Completar con ""Buenos Aires""
+5 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Ninguna
+Nombre: Buenos Aires
+Capital: La Plata
+Habitantes: 17.523.996
+Km²: 307.571",,,,,,,
+24,V1,Abierto ,31-08,"Verificar en la Página
+de Provinciano buscar
+""Misiones"" en 
+región ""Norte Grande 
+Argentino""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Norte 
+Grande Argentino""
+3 - Hacer click en el campo Nombre
+4 - Completar con ""Misiones""
+5 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Misiones
+Capital: Posadas
+Habitantes: 1.278.873
+Km²: 29.801",,,,,,,
+25,V1,Abierto ,31-08,"Verificar en la Página
+de Provinciano buscar
+""Mendoza"" en 
+región ""Norte Grande 
+Argentino""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Norte 
+Grande Argentino""
+3 - Hacer click en el campo Nombre
+4 - Completar con ""Mendoza""
+5 - Hacer click en el botón ""Buscar!""","El sistema muestra en la grilla el mensaje “No hay 
+provincias que coincidan con lo buscado”",,,,,,,
+26,V1,Abierto ,31-08,"Verificar en la Página
+de Provinciano buscar
+""Mendoza"" en 
+región ""Nuevo Cuyo""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Nuevo 
+Cuyo""
+3 - Hacer click en el campo Nombre
+4 - Completar con ""Mendoza""
+5 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Nuevo Cuyo
+Nombre: Mendoza
+Capital: Mendoza
+Habitantes: 2.043.540
+Km²: 148.827",,,,,,,
+27,V1,Abierto ,31-08,"Verificar en la Página
+de Provinciano buscar
+""Chubut"" en 
+región ""Nuevo Cuyo""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Nuevo
+Cuyo""
+3 - Hacer click en el campo Nombre
+4 - Completar con ""Chubut""
+5 - Hacer click en el botón ""Buscar!""","El sistema muestra en la grilla el mensaje “No hay 
+provincias que coincidan con lo buscado”",,,,,,,
+28,V1,Abierto ,31-08,"Verificar en la Página
+de Provinciano buscar
+""Chubut"" en 
+región ""Patagonia""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Patagonia""
+3 - Hacer click en el campo Nombre
+4 - Completar con ""Chubut""
+5 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Patagonia
+Nombre: Chubut
+Capital: Rawson
+Habitantes: 592.621
+Km²: 224.686",,,,,,,
+29,V1,Abierto ,31-08,"Verificar en la Página
+de Provinciano buscar
+""Catamarca"" en 
+región ""Patagonia""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Patagonia""
+3 - Hacer click en el campo Nombre
+4 - Completar con ""Catamarca""
+5 - Hacer click en el botón ""Buscar!""","El sistema muestra en la grilla el mensaje “No hay 
+provincias que coincidan con lo buscado”",,,,,,,
+30,V1,Abierto ,31-08,"Verificar en la Página
+de Provinciano buscar
+""Buenos Aires"" en 
+región ""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Todas""
+3 - Hacer click en el campo Nombre
+4 - Completar con ""Buenos Aires""
+5 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Ninguna
+Nombre: Buenos Aires
+Capital: La Plata
+Habitantes: 17.523.996
+Km²: 307.571",,,,,,,
+31,V1,Abierto ,31-08,"Verificar en Página de
+Provinciano ordenar la
+columna Región en 
+orden alfabético 
+descendente","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""San ""
+4 - Hacer click en el botón ""Buscar!""
+5 - Hacer click en el botón de orden
+alfabético descendente de la columna
+Región","El sistema muestra una grilla con los siguientes
+datos y en el siguiente orden:
+1 - Región: Centro
+Nombre: Santa Fe
+Capital: Santa Fe
+Habitantes: 3.544.908
+Km²: 133.007
+2 - Región: Norte Grande Argentino
+Nombre: Santiago del Estero
+Capital: Santiago del Estero
+Habitantes: 1.060.906
+Km²: 136.351
+3 - Región: Nuevo Cuyo
+Nombre: San Juan
+Capital: San Juan
+Habitantes: 822.853
+Km²: 89.651
+4 - Región: Nuevo Cuyo
+Nombre: San Luis
+Capital: San Luis
+Habitantes: 542.069
+Km²: 76.748
+5 - Región: Patagonia
+Nombre: Santa Cruz
+Capital: Río Gallegos
+Habitantes: 337.226
+Km²: 243.943",,,,,,,
+32,V1,Abierto ,31-08,"Verificar en Página de
+Provinciano ordenar la
+columna Región en 
+orden alfabético 
+ascendente","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""San ""
+4 - Hacer click en el botón ""Buscar!""
+5 - Hacer click en el botón de orden
+alfabético ascendente de la columna
+Región","El sistema muestra una grilla con los siguientes
+datos y en el siguiente orden:
+1 - Región: Patagonia
+Nombre: Santa Cruz
+Capital: Río Gallegos
+Habitantes: 337.226
+Km²: 243.943
+2 - Región: Nuevo Cuyo
+Nombre: San Luis
+Capital: San Luis
+Habitantes: 542.069
+Km²: 76.748
+3 - Región: Nuevo Cuyo
+Nombre: San Juan
+Capital: San Juan
+Habitantes: 822.853
+Km²: 89.651
+4 - Región: Norte Grande Argentino
+Nombre: Santiago del Estero
+Capital: Santiago del Estero
+Habitantes: 1.060.906
+Km²: 136.351
+5 - Región: Centro
+Nombre: Santa Fe
+Capital: Santa Fe
+Habitantes: 3.544.908
+Km²: 133.007",,,,,,,
+33,V1,Abierto ,31-08,"Verificar en Página de
+Provinciano ordenar la
+columna Nombre en 
+orden alfabético 
+ascendente","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""San ""
+4 - Hacer click en el botón ""Buscar!""
+5 - Hacer click en el botón de orden
+alfabético ascendente de la columna
+Nombre","El sistema muestra una grilla con los siguientes
+datos y en el siguiente orden:
+1 - Región: Norte Grande Argentino
+Nombre: Santiago del Estero
+Capital: Santiago del Estero
+Habitantes: 1.060.906
+Km²: 136.351
+2 - Región: Centro
+Nombre: Santa Fe
+Capital: Santa Fe
+Habitantes: 3.544.908
+Km²: 133.007
+3 - Región: Patagonia
+Nombre: Santa Cruz
+Capital: Río Gallegos
+Habitantes: 337.226
+Km²: 243.943
+4 - Región: Nuevo Cuyo
+Nombre: San Luis
+Capital: San Luis
+Habitantes: 542.069
+Km²: 76.748
+5 - Región: Nuevo Cuyo
+Nombre: San Juan
+Capital: San Juan
+Habitantes: 822.853
+Km²: 89.651",,,,,,,
+34,V1,Abierto ,31-08,"Verificar en Página de
+Provinciano ordenar la
+columna Capital en 
+orden alfabético 
+descendente","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""San ""
+4 - Hacer click en el botón ""Buscar!""
+5 - Hacer click en el botón de orden
+alfabético descendente de la columna
+Capital","El sistema muestra una grilla con los siguientes
+datos y en el siguiente orden:
+1 - Región: Patagonia
+Nombre: Santa Cruz
+Capital: Río Gallegos
+Habitantes: 337.226
+Km²: 243.943
+2 - Región: Nuevo Cuyo
+Nombre: San Juan
+Capital: San Juan
+Habitantes: 822.853
+Km²: 89.651
+3 - Región: Nuevo Cuyo
+Nombre: San Luis
+Capital: San Luis
+Habitantes: 542.069
+Km²: 76.748
+4 - Región: Centro
+Nombre: Santa Fe
+Capital: Santa Fe
+Habitantes: 3.544.908
+Km²: 133.007
+5 - Región: Norte Grande Argentino
+Nombre: Santiago del Estero
+Capital: Santiago del Estero
+Habitantes: 1.060.906
+Km²: 136.351",,,,,,,
+35,V1,Abierto ,31-08,"Verificar en Página de
+Provinciano ordenar la
+columna Capital en 
+orden alfabético 
+ascendente","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""San ""
+4 - Hacer click en el botón ""Buscar!""
+5 - Hacer click en el botón de orden
+alfabético ascendente de la columna
+Capital","El sistema muestra una grilla con los siguientes
+datos y en el siguiente orden:
+1 - Región: Norte Grande Argentino
+Nombre: Santiago del Estero
+Capital: Santiago del Estero
+Habitantes: 1.060.906
+Km²: 136.351
+2 - Región: Centro
+Nombre: Santa Fe
+Capital: Santa Fe
+Habitantes: 3.544.908
+Km²: 133.007
+3 - Región: Nuevo Cuyo
+Nombre: San Luis
+Capital: San Luis
+Habitantes: 542.069
+Km²: 76.748
+4 - Región: Nuevo Cuyo
+Nombre: San Juan
+Capital: San Juan
+Habitantes: 822.853
+Km²: 89.651
+5 - Región: Patagonia
+Nombre: Santa Cruz
+Capital: Río Gallegos
+Habitantes: 337.226
+Km²: 243.943",,,,,,,
+36,V1,Abierto ,31-08,"Verificar en Página de
+Provinciano ordenar la
+columna Habitantes en 
+orden numérico
+ascendente","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""San ""
+4 - Hacer click en el botón ""Buscar!""
+5 - Hacer click en el botón de orden
+numérico ascendente de la columna
+Habitantes","El sistema muestra una grilla con los siguientes
+datos y en el siguiente orden:
+1 - Región: Patagonia
+Nombre: Santa Cruz
+Capital: Río Gallegos
+Habitantes: 337.226
+Km²: 243.943
+2 - Región: Nuevo Cuyo
+Nombre: San Luis
+Capital: San Luis
+Habitantes: 542.069
+Km²: 76.748
+3 - Región: Nuevo Cuyo
+Nombre: San Juan
+Capital: San Juan
+Habitantes: 822.853
+Km²: 89.651
+4 - Región: Norte Grande Argentino
+Nombre: Santiago del Estero
+Capital: Santiago del Estero
+Habitantes: 1.060.906
+Km²: 136.351
+5 - Región: Centro
+Nombre: Santa Fe
+Capital: Santa Fe
+Habitantes: 3.544.908
+Km²: 133.007",,,,,,,
+37,V1,Abierto ,31-08,"Verificar en Página de
+Provinciano ordenar la
+columna Habitantes en 
+orden numérico
+descendente","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""San ""
+4 - Hacer click en el botón ""Buscar!""
+5 - Hacer click en el botón de orden
+numérico descendente de la columna
+Habitantes","El sistema muestra una grilla con los siguientes
+datos y en el siguiente orden:
+1 - Región: Centro
+Nombre: Santa Fe
+Capital: Santa Fe
+Habitantes: 3.544.908
+Km²: 133.007
+2 - Región: Norte Grande Argentino
+Nombre: Santiago del Estero
+Capital: Santiago del Estero
+Habitantes: 1.060.906
+Km²: 136.351
+3 - Región: Nuevo Cuyo
+Nombre: San Juan
+Capital: San Juan
+Habitantes: 822.853
+Km²: 89.651
+4 - Región: Nuevo Cuyo
+Nombre: San Luis
+Capital: San Luis
+Habitantes: 542.069
+Km²: 76.748
+5 - Región: Patagonia
+Nombre: Santa Cruz
+Capital: Río Gallegos
+Habitantes: 337.226
+Km²: 243.943",,,,,,,
+38,V1,Abierto ,31-08,"Verificar en Página de
+Provinciano ordenar la
+columna Km² en 
+orden numérico
+ascendente","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""San ""
+4 - Hacer click en el botón ""Buscar!""
+5 - Hacer click en el botón de orden
+numérico ascendente de la columna
+Km²","El sistema muestra una grilla con los siguientes
+datos y en el siguiente orden:
+1 - Región: Nuevo Cuyo
+Nombre: San Luis
+Capital: San Luis
+Habitantes: 542.069
+Km²: 76.748
+2 - Región: Nuevo Cuyo
+Nombre: San Juan
+Capital: San Juan
+Habitantes: 822.853
+Km²: 89.651
+3 - Región: Centro
+Nombre: Santa Fe
+Capital: Santa Fe
+Habitantes: 3.544.908
+Km²: 133.007
+4 - Región: Norte Grande Argentino
+Nombre: Santiago del Estero
+Capital: Santiago del Estero
+Habitantes: 1.060.906
+Km²: 136.351
+5 - Región: Patagonia
+Nombre: Santa Cruz
+Capital: Río Gallegos
+Habitantes: 337.226
+Km²: 243.943",,,,,,,
+39,V1,Abierto ,31-08,"Verificar en Página de
+Provinciano ordenar la
+columna Km² en 
+orden numérico
+descendente","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre
+3 - Completar con ""San ""
+4 - Hacer click en el botón ""Buscar!""
+5 - Hacer click en el botón de orden
+numérico descendente de la columna
+Km²","El sistema muestra una grilla con los siguientes
+datos y en el siguiente orden:
+1 - Región: Patagonia
+Nombre: Santa Cruz
+Capital: Río Gallegos
+Habitantes: 337.226
+Km²: 243.943
+2 - Región: Norte Grande Argentino
+Nombre: Santiago del Estero
+Capital: Santiago del Estero
+Habitantes: 1.060.906
+Km²: 136.351
+3 - Región: Centro
+Nombre: Santa Fe
+Capital: Santa Fe
+Habitantes: 3.544.908
+Km²: 133.007
+4 - Región: Nuevo Cuyo
+Nombre: San Juan
+Capital: San Juan
+Habitantes: 822.853
+Km²: 89.651
+5 - Región: Nuevo Cuyo
+Nombre: San Luis
+Capital: San Luis
+Habitantes: 542.069
+Km²: 76.748",,,,,,,
+40,V1,Abierto ,02-09,"Verificar en página 
+Provinciano realizar dos
+búsquedas seguidas","1 - Ingresar a la página de 
+Provinciano
+2 - Dejar el menú desplegable en 
+""Todas""
+3 - Hacer click en el campo 
+Nombre 
+4 - Llenar el campo con 
+""Neuquén""
+5 - Hacer click en el botón 
+""Buscar!""","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Reemplazar el campo con ""Buenos 
+Aires""
+4 - Hacer click en el botón ""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Ninguna
+Nombre: Buenos Aires
+Capital: La Plata
+Habitantes: 17.523.996
+Km²: 307.571",,,,,,,
+41,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Catamarca"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Catamarca""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Catamarca
+Capital: San Fernando del Valle de Catamarca
+Habitantes: 429.562
+Km²: 102.602",,,,,,,
+42,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Chaco"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Chaco""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Chaco
+Capital: Resistencia
+Habitantes: 1.129.606
+Km²: 99.633",,,,,,,
+43,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Chubut"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Chubut""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Patagonia
+Nombre: Chubut
+Capital: Rawson
+Habitantes: 592.621
+Km²: 224.686",,,,,,,
+44,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Córdoba"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Córdoba""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Centro
+Nombre: Córdoba
+Capital: Córdoba
+Habitantes: 3.840.905
+Km²: 165.321",,,,,,,
+45,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Corrientes"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Corrientes""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Corrientes
+Capital: Corrientes
+Habitantes: 1.212.696
+Km²: 88.199",,,,,,,
+46,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Entre Ríos"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Entre Ríos""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Centro
+Nombre: Entre Ríos
+Capital: Paraná
+Habitantes: 1.425.578
+Km²: 78.781",,,,,,,
+47,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Formosa"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Formosa""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Formosa
+Capital: Formosa
+Habitantes: 607.419
+Km²: 72.066",,,,,,,
+48,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Jujuy"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Jujuy""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Jujuy
+Capital: San Salvador de Jujuy
+Habitantes: 811.611
+Km²: 53.219",,,,,,,
+49,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""La Pampa"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""La Pampa""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Patagonia
+Nombre: La Pampa
+Capital: Santa Rosa
+Habitantes: 361.859
+Km²: 143.440",,,,,,,
+50,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""La Rioja"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""La Rioja""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: La Rioja
+Capital: La Rioja
+Habitantes: 383.865
+Km²: 89.680",,,,,,,
+51,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Mendoza"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Mendoza""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Nuevo Cuyo
+Nombre: Mendoza
+Capital: Mendoza
+Habitantes: 2.043.540
+Km²: 148.827",,,,,,,
+52,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Misiones"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Misiones""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Misiones
+Capital: Posadas
+Habitantes: 1.278.873
+Km²: 29.801",,,,,,,
+53,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Río Negro"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Río Negro""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Patagonia
+Nombre: Río Negro
+Capital: Viedma
+Habitantes: 750.768
+Km²: 203.013",,,,,,,
+54,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Salta"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Salta""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Salta
+Capital: Salta
+Habitantes: 1.441.351
+Km²: 155.488",,,,,,,
+55,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""San Juan"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""San Juan""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Nuevo Cuyo
+Nombre: San Juan
+Capital: San Juan
+Habitantes: 822.853
+Km²: 89.651",,,,,,,
+56,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""San Luis"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""San Luis""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Nuevo Cuyo
+Nombre: San Luis
+Capital: San Luis
+Habitantes: 542.069
+Km²: 76.748",,,,,,,
+57,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Santa Cruz"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Santa Cruz""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Patagonia
+Nombre: Santa Cruz
+Capital: Río Gallegos
+Habitantes: 337.226
+Km²: 243.943",,,,,,,
+58,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Santa Fe"" en región
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Santa Fe""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Centro
+Nombre: Santa Fe
+Capital: Santa Fe
+Habitantes: 3.544.908
+Km²: 133.007",,,,,,,
+59,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Santiago del Estero"" en
+región ""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Santiago del
+Estero""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Santiago del Estero
+Capital: Santiago del Estero
+Habitantes: 1.060.906
+Km²: 136.351",,,,,,,
+60,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Tierra del Fuego, 
+Antártida e Islas del 
+Atlántico Sur"" en
+región ""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Tierra del 
+Fuego, Antártida e Islas del Atlántico 
+Sur""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Patagonia
+Nombre: Tierra del Fuego, Antártida e Islas del 
+Atlántico Sur
+Capital: Ushuaia
+Habitantes: 185.732
+Km²: 21.571",,,,,,,
+61,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Tucumán"" en región 
+""Todas""","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""Tucumán""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Tucumán
+Capital: San Miguel de Tucumán
+Habitantes: 1.731.820
+Km²: 22.524",,,,,,,
+62,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Catamarca"" en región
+""Norte Grande 
+Argentino""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Norte 
+Grande Argentino""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""Catamarca""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Catamarca
+Capital: San Fernando del Valle de Catamarca
+Habitantes: 429.562
+Km²: 102.602",,,,,,,
+63,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Chaco"" en región
+""Norte Grande 
+Argentino""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Norte 
+Grande Argentino""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""Chaco""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Chaco
+Capital: Resistencia
+Habitantes: 1.129.606
+Km²: 99.633",,,,,,,
+64,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Córdoba"" en región
+""Centro""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Centro""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""Córdoba""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Centro
+Nombre: Córdoba
+Capital: Córdoba
+Habitantes: 3.840.905
+Km²: 165.321",,,,,,,
+65,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Corrientes"" en región
+""Norte Grande 
+Argentino""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Norte 
+Grande Argentino""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""Corrientes""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Corrientes
+Capital: Corrientes
+Habitantes: 1.212.696
+Km²: 88.199",,,,,,,
+66,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Entre Ríos"" en región
+""Centro""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Centro""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""Entre Ríos""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Centro
+Nombre: Entre Ríos
+Capital: Paraná
+Habitantes: 1.425.578
+Km²: 78.781",,,,,,,
+67,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Formosa"" en región
+""Norte Grande 
+Argentino""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Norte 
+Grande Argentino""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""Formosa""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Formosa
+Capital: Formosa
+Habitantes: 607.419
+Km²: 72.066",,,,,,,
+68,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Jujuy"" en región
+""Norte Grande 
+Argentino""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Norte 
+Grande Argentino""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""Jujuy""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Jujuy
+Capital: San Salvador de Jujuy
+Habitantes: 811.611
+Km²: 53.219",,,,,,,
+69,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""La Pampa"" en región
+""Patagonia""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción 
+""Patagonia""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""La Pampa""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Patagonia
+Nombre: La Pampa
+Capital: Santa Rosa
+Habitantes: 361.859
+Km²: 143.440",,,,,,,
+70,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""La Rioja"" en región
+""Norte Grande 
+Argentino""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Norte 
+Grande Argentino""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""La Rioja""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: La Rioja
+Capital: La Rioja
+Habitantes: 383.865
+Km²: 89.680",,,,,,,
+71,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Río Negro"" en región
+""Patagonia""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción 
+""Patagonia""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""Río Negro""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Patagonia
+Nombre: Río Negro
+Capital: Viedma
+Habitantes: 750.768
+Km²: 203.013",,,,,,,
+72,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Salta"" en región
+""Norte Grande 
+Argentino""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Norte 
+Grande Argentino""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""Salta""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Salta
+Capital: Salta
+Habitantes: 1.441.351
+Km²: 155.488",,,,,,,
+73,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""San Juan"" en región
+""Nuevo Cuyo""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Nuevo
+Cuyo""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""San Juan""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Nuevo Cuyo
+Nombre: San Juan
+Capital: San Juan
+Habitantes: 822.853
+Km²: 89.651",,,,,,,
+74,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""San Luis"" en región
+""Nuevo Cuyo""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Nuevo
+Cuyo""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""San Luis""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Nuevo Cuyo
+Nombre: San Luis
+Capital: San Luis
+Habitantes: 542.069
+Km²: 76.748",,,,,,,
+75,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Santa Cruz"" en región
+""Patagonia""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción 
+""Patagonia""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""Santa Cruz""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Patagonia
+Nombre: Santa Cruz
+Capital: Río Gallegos
+Habitantes: 337.226
+Km²: 243.943",,,,,,,
+76,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia ""Santiago 
+del Estero"" en región 
+""Norte Grande 
+Argentino""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Norte 
+Grande Argentino""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""Santiago del 
+Estero""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Santiago del Estero
+Capital: Santiago del Estero
+Habitantes: 1.060.906
+Km²: 136.351",,,,,,,
+77,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Tierra del Fuego, 
+Antártida e Islas del 
+Atlántico Sur"" en
+región ""Patagonia""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción 
+""Patagonia""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""Tierra del 
+Fuego, Antártida e Islas del 
+Atlántico Sur""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Patagonia
+Nombre: Tierra del Fuego, Antártida e Islas del 
+Atlántico Sur
+Capital: Ushuaia
+Habitantes: 185.732
+Km²: 21.571",,,,,,,
+78,V1,Abierto ,02-09,"Verificar en la página 
+de Provinciano buscar 
+la provincia 
+""Tucumán"" en región 
+""Norte Grande 
+Argentino""","1 - Ingresar a la página de 
+Provinciano","1 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+2 - Hacer click en la opción ""Norte 
+Grande Argentino""
+3 - Hacer click en el campo Nombre 
+4 - Llenar el campo con ""Tucumán""
+5 - Hacer click en el botón 
+""Buscar!""","El sistema muestra una grilla con los siguientes 
+datos:
+Región: Norte Grande Argentino
+Nombre: Tucumán
+Capital: San Miguel de Tucumán
+Habitantes: 1.731.820
+Km²: 22.524",,,,,,,
+79,V1,Abierto ,09-09,"Verificar en la página de
+Provinciano refrescar la 
+página luego de una 
+búsqueda","1 - Ingresar a la página de 
+Provinciano
+2 - Hacer click en el botón combo
+del menú desplegable del campo
+Región
+3 - Hacer click en la opción 
+""Patagonia""
+4 - Hacer click en el campo 
+Nombre 
+5 - Llenar el campo con ""Santa 
+Cruz""
+6 - Hacer click en el botón 
+""Buscar!""","1 - Hacer click en el botón de refrescar
+ pestaña","El sistema muestra en la pantalla:
+Títulos: 
+- Provinciano
+- Buscador de datos sobre Provincias de la 
+República Argentina
+Campos:
+- Región (Combo, valor por defecto ""Todas"")
+- Nombre (Vacío)
+Opción: Buscar!",,,,,,,
+80,V1,Abierto ,09-09,"Verificar en la página de
+Provinciano en campo
+Nombre una provincia
+inexistente","1 - Ingresar a la página de 
+Provinciano","1 - Dejar el menú desplegable en 
+""Todas""
+2 - Hacer click en el campo Nombre 
+3 - Llenar el campo con ""asdasd""
+4 - Hacer click en el botón 
+""Buscar!""","El sistema muestra en la grilla el mensaje “No hay 
+provincias que coincidan con lo buscado” ",,,,,,,
